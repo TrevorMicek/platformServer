@@ -9,13 +9,18 @@ const bodyParser = require("body-parser");
 
 const firstPage = './test/first-page.json'
 
-const changePage = require('./test/change')
+const changePage = require('./test/change');
+const { response } = require('express');
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 app.use(cors({origin:true,credentials: true}));
-//app.use('/', express.static('server'));
-
+if (process.env.NODE_ENV === 'production') {
+   app.use('/', express.static('/test'));
+}
+app.get('*', (req, res) => {
+    response.sendFile(path.join(__dirname))
+})
 
 app.post("/api/page/:page", function(req, res) {
     if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
