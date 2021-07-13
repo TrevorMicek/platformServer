@@ -17,8 +17,7 @@ app.use(cors({origin:true,credentials: true}));
 app.use('/', express.static('build'));
 
 
-
-app.post("/api/page/:page", function(req, res) {
+app.post("https://platform-service.herokuapp.com/api/page/:page", function(req, res) {
     if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
         res.redirect('http://localhost:8000')
     } else {
