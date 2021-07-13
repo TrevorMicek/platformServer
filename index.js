@@ -14,18 +14,19 @@ const changePage = require('./test/change')
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 app.use(cors({origin:true,credentials: true}));
-app.use('/', express.static('server'));
+//app.use('/', express.static('server'));
 
 
-app.post("/page/:page", function(req, res) {
+app.post("/api/page/:page", function(req, res) {
     if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
         res.redirect('http://localhost:8000')
     } else {
     changePage(firstPage, req.body)
     res.redirect('http://localhost:8000')
     }
+    res.send('posted correctly')
 })
-app.use('/page', express.static(path.join(__dirname, '../server/test')));
+app.use('/api/page', express.static(path.join(__dirname, '../server/test')));
 
 
 
