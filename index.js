@@ -29,9 +29,9 @@ app.post("/api/page/:page", function(req, res) {
     changePage(firstPage, req.body)
     res.redirect('http://localhost:8000')
     }
-    res.send('posted correctly')
+   
 })
-
+app.use('/api/page', express.static(path.join(__dirname, '../server/test')));
 
 
 
