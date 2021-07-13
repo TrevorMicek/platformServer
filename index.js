@@ -26,7 +26,6 @@ app.post("/api/page/:page", function(req, res) {
     }
     res.send('posted correctly')
 })
-app.use('/api/page', express.static(path.join(__dirname, '../server/test')));
 
 
 
