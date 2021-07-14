@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname))
 })
 
-app.use('/page/', express.static(path.join(__dirname, '../server/test')));
+
 
 
 app.post("/api/page/:page", function(req, res) {
