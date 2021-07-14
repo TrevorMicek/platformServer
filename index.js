@@ -19,22 +19,22 @@ app.use(cors({origin:true,credentials: true}));
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('testPage'))
     app.use('/api/page/', express.static(path.join(__dirname, './test')));
-    app.post("/api/page/:page", function(req, res) {
-        if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
-            res.redirect('https://platformservice.netlify.app/')
-        } else {
-            changePage(firstPage, req.body)
-            //res.redirect('https://platformservice.netlify.app/')
-            res.send('it worked!')
-        }
-       
-    })
+   
 }
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname))
 })
 
-
+ app.post("/api/page/:page", function(req, res) {
+        if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
+            res.redirect('https://platformservice.netlify.app/')
+        } else {
+            changePage(firstPage, req.body)
+            res.redirect('https://platformservice.netlify.app/')
+            
+        }
+       
+    })
 
 
 
