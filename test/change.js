@@ -16,7 +16,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
    
     let parseData = JSON.parse(data)
          
-   
+   console.log('change is called')
     fs.readFile('./test/CompStore.json', "utf8", function(err, pageData) {
 
     if (err) throw err;
@@ -75,6 +75,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
     
   }
  let myCallBack = function(data) {
+     console.log('added')
     return data()
     
  }
