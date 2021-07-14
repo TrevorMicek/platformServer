@@ -17,6 +17,7 @@ app.use(bodyParser.json())
 app.use(cors({origin:true,credentials: true}));
 if (process.env.NODE_ENV === 'production') {
    app.use('/', express.static('/testPage'));
+   app.use('/api/page', express.static(path.join(__dirname, '../server/test')));
 }
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname))
@@ -31,7 +32,7 @@ app.post("/api/page/:page", function(req, res) {
     }
    
 })
-app.use('/api/page', express.static(path.join(__dirname, '../server/test')));
+
 
 
 
