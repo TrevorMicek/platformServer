@@ -24,8 +24,8 @@ app.post("/api/page/:page", function(req, res) {
     if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
         res.redirect('http://localhost:8000')
     } else {
-    changePage(firstPage, req.body)
-    res.redirect('http://localhost:8000')
+        changePage(firstPage, req.body)
+        res.redirect('http://localhost:8000')
     }
    
 })
