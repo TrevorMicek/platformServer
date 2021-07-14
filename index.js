@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'production') {
    app.use('/', express.static('/testPage'));
 }
 app.get('*', (req, res) => {
-    response.sendFile(path.join(__dirname))
+    res.sendFile(path.join(__dirname))
 })
 
 app.post("/api/page/:page", function(req, res) {
