@@ -36,7 +36,7 @@ app.post("/api/page/:page", function(req, res) {
     }
    
 })
- app.use('/api/page/', express.static(path.join(__dirname, './test')));
+
 
 
 
