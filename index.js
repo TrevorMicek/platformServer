@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(cors({origin:true,credentials: true}));
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('testPage'))
+    app.use(express.static('test'))
 }
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname))
