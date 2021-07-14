@@ -57,6 +57,6 @@ router.get('/api/items', (req, res) => {
 });
 */
 
-var listener = app.listen(process.env.PORT || 4000, function() {
+var listener = app.listen(process.env.PORT, function() {
     console.log('Listening on port ' + listener.address().port);
 });
