@@ -29,14 +29,14 @@ app.get('*', (req, res) => {
 
 app.post("/api/page/:page", function(req, res) {
     if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
-        res.redirect('https://platform-service.herokuapp.com/api/page/:page')
+        res.redirect('https://platformservice.netlify.app/')
     } else {
         changePage(firstPage, req.body)
         res.redirect('https://platformservice.netlify.app/')
     }
    
 })
-app.use('/api/page/', express.static(path.join(__dirname, './test')));
+ app.use('/api/page/', express.static(path.join(__dirname, './test')));
 
 
 
