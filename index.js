@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(cors({origin:true,credentials: true}));
 
 
-   app.use('/api/page/:page', express.static(path.join(__dirname, '../server/test')));
+   app.use('https://platform-service.herokuapp.com/api/page/', express.static(path.join(__dirname, '../server/test')));
 
 
 app.post("/api/page/:page", function(req, res) {
