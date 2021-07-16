@@ -24,7 +24,8 @@ if (process.env.NODE_ENV === 'production') {
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname))
 })
-
+app.use('/api/page/', express.static(path.join(__dirname, './test')));
+   
  app.post("/api/page/:page", function(req, res) {
         if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
             res.redirect('https://platformservice.netlify.app/')
