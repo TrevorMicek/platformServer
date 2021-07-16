@@ -35,7 +35,7 @@ app.get('*', (req, res) => {
         }
        
     })
-
+//app.use("/api/components", express.static(path.join(__dirname, './components')))
 
 
 
