@@ -36,7 +36,7 @@ app.use('/api/page/', express.static(path.join(__dirname, './test')));
         }
        
     })
-//app.use("/api/components", express.static(path.join(__dirname, './components')))
+app.use("/api/components", express.static(path.join(__dirname, './components')))
 
 
 
