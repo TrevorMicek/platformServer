@@ -14,7 +14,7 @@ const { response } = require('express');
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-app.use(cors({origin:true,credentials: true, origin: '*'}));
+app.use(cors({origin:true,credentials: true, origin: 'https://platformservice.netlify.app/'}));
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('testPage'))
@@ -27,7 +27,7 @@ app.get('*', (req, res) => {
 app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
  app.post("/api/page/:page", function(req, res) {
-   
+    //res.setHeader('Access-Control-Allow-Origin', 'https://platformservice.netlify.app/');
         if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
             res.redirect('https://platformservice.netlify.app/')
         } else {
