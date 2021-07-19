@@ -14,8 +14,9 @@ const { response } = require('express');
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-app.use(cors({origin:'https://platformservice.netlify.app/',credentials: true}));
+
 app.use(function(req, res, next) {
+    cors({origin:'https://platformservice.netlify.app/',credentials: true})
     res.header("Access-Control-Allow-Origin", "https://platformservice.netlify.app/"); // update to match the domain you will make the request from
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
