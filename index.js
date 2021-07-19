@@ -27,7 +27,7 @@ app.get('*', (req, res) => {
 app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
  app.post("/api/page/:page", function(req, res) {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8000');
+    //res.setHeader('Access-Control-Allow-Origin', 'https://platformservice.netlify.app/');
         if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
             res.redirect('https://platformservice.netlify.app/')
         } else {
