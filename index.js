@@ -19,7 +19,7 @@ let corsOptions = {
     credentials: true
 }
 app.use(cors(corsOptions))
-//app.options('/api/page/:page', cors())
+app.options('/api/page/:page', cors(corsOptions))
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('testPage'))
@@ -31,7 +31,7 @@ app.get('*', (req, res) => {
 })
 app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
- app.post("/api/page/:page", function(req, res) {
+ app.post("/api/page/:page", cors(corsOptions), function(req, res) {
     res.header("Access-Control-Allow-Origin", "https://platformservice.netlify.app/"); // update to match the domain you will make the request from
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
