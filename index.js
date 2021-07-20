@@ -28,8 +28,8 @@ app.get('*', (req, res) => {
 app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
  app.post("/api/page/:page", function(req, res) {
-    res.setHeader("Access-Control-Allow-Origin", "https://platformservice.netlify.app/"); // update to match the domain you will make the request from
-    res.setHheader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    //res.setHeader("Access-Control-Allow-Origin", "https://platformservice.netlify.app/"); // update to match the domain you will make the request from
+    //res.setHheader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
             res.redirect('https://platformservice.netlify.app/')
         } else {
