@@ -33,13 +33,11 @@ app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
  app.post("/api/page/:page", cors(corsOptions), function(req, res) {
    
-        if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
-            
-        } else {
+        
             changePage(firstPage, req.body)
             
             
-        }
+        
        
     })
 app.use("/api/components", express.static(path.join(__dirname, './components')))
