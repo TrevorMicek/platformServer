@@ -15,7 +15,7 @@ const { response } = require('express');
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 let corsOptions = {
-    origin:"https://localhost:8000",
+    origin:"http://localhost:8000",
     credentials: true
 }
 app.use(cors(corsOptions))
