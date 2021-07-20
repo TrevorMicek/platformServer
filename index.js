@@ -34,10 +34,10 @@ app.use('/api/page/', express.static(path.join(__dirname, './test')));
  app.post("/api/page/:page", cors(corsOptions), function(req, res) {
    
         if (req.body.add === undefined && req.body.delete === undefined && req.body.to === undefined ) {
-            res.redirect('https://platformservice.netlify.app/')
+            res.redirect('https://platformservice.netlify.app')
         } else {
             changePage(firstPage, req.body)
-            res.redirect('https://platformservice.netlify.app/')
+            res.redirect('https://platformservice.netlify.app')
             
         }
        
