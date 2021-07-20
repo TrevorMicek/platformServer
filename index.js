@@ -14,8 +14,8 @@ const { response } = require('express');
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-app.use(cors());
-app.options('/api/page/:page', cors())
+//app.use(cors());
+app.options('/api/page/:page', cors({origin:true,credentials: true}))
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('testPage'))
