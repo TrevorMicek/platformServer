@@ -14,7 +14,7 @@ const { response } = require('express');
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-app.use(cors({origin:true,credentials: true}));
+app.use(cors({origin:"https://platformservice.netlify.app/",credentials: true}));
 app.options('/api/page/:page', cors())
 
 if (process.env.NODE_ENV === 'production') {
