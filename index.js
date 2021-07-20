@@ -19,7 +19,7 @@ let corsOptions = {
     credentials: true
 }
 app.use(cors(corsOptions))
-app.options('/api/page/:page', cors(corsOptions))
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('testPage'))
@@ -31,14 +31,9 @@ app.get('*', (req, res) => {
 })
 app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
- app.post("/api/page/:page", cors(corsOptions), function(req, res) {
-   
-        
+ app.post("/api/page/:page", function(req, res) {
+
             changePage(firstPage, req.body)
-            
-            
-        
-       
     })
 app.use("/api/components", express.static(path.join(__dirname, './components')))
 
