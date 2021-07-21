@@ -1,0 +1,10 @@
+[
+    {
+        "queries": [
+            "[component + property] to [new value]",
+            "add [component]",
+            "delete [component]",
+            "components"
+        ]
+    }
+]

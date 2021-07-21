@@ -36,6 +36,7 @@ app.use('/api/page/', express.static(path.join(__dirname, './test')));
             changePage(firstPage, req.body)
     })
 app.use("/api/components", express.static(path.join(__dirname, './components')))
+app.use("/api/queries", express.static(path.join(__dirname, './queries')))
 
 
 
