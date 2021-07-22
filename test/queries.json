@@ -6,7 +6,11 @@
             "delete [component]",
             "components",
             "queries",
-            "add SecondSection"
+            "add FirstSection",
+            "add SecondSection",
+            "delete FirstSection",
+            "delete SecondSection"
+            
         ]
     }
 ]
