@@ -33,7 +33,7 @@ app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
  app.post("/api/page/:page", function(req, res) {
 
-            changePage(firstPage, req.body)
+            res.send(changePage(firstPage, req.body))
     })
 
 
