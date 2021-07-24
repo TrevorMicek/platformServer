@@ -32,8 +32,8 @@ app.get('*', (req, res) => {
 app.use('/api/page/', express.static(path.join(__dirname, './test')));
    
  app.post("/api/page/:page", function(req, res) {
-
-            res.send(changePage(firstPage, req.body))
+            
+            changePage(firstPage, req.body)
     })
 
 
