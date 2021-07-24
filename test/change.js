@@ -72,7 +72,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
             if (parseData === []) {
                 parseData.push({
                     component: [
-                        "FirstSection"
+                        "Holder"
                     ],
                     text: [],
                     style: []
