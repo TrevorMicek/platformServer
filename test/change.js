@@ -69,15 +69,6 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                     console.log('error')
             }
             //console.log(changeText, changeStyle, deleteComponent, addComponent)
-            if (parseData === []) {
-                parseData.push({
-                    component: [
-                        "Holder"
-                    ],
-                    text: [],
-                    style: []
-                })
-            }
 	
 		}
     
