@@ -63,7 +63,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                     parseData.splice(parseData.indexOf(parseData[i]), 1)
                     return JSON.stringify(parseData, null, 2)
                 case addComponent:
-                    parseData.push(getAdd())
+                    parseData.unshift(getAdd())
                     return JSON.stringify(parseData, null, 2)
                 default:
                     console.log('error')
