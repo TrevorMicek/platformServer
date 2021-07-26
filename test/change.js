@@ -60,15 +60,14 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                     return replaceProperty(parseData[i].text[jsonFile.position - 1])
                 case changeStyle:
                     return replaceProperty(parseData[i].style[jsonFile.property])
+                case deleteComponent && addComponent:
+                    parseData.splice(parseData.indexOf(parseData[1]), 1)
+                    return JSON.stringify(parseData, null, 2)
                 case deleteComponent:
                     parseData.splice(parseData.indexOf(parseData[i]), 1)
                     return JSON.stringify(parseData, null, 2)
                 case addComponent:
                     parseData.push(getAdd())
-                    return JSON.stringify(parseData, null, 2)
-                case deleteComponent && addComponent:
-                    
-                    parseData.splice(parseData.indexOf(parseData[1]), 1)
                     return JSON.stringify(parseData, null, 2)
                 default:
                     console.log('error')
