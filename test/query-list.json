@@ -6,7 +6,8 @@
             "add FirstSection",
             "add SecondSection",
             "delete FirstSection",
-            "delete SecondSection"
+            "delete SecondSection",
+            "switch FirstSection SecondSection"
             
         ]
     }
