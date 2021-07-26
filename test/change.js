@@ -52,6 +52,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
 		    let changeStyle = parseData[i].style[jsonFile.property] && parseData[i].component[0] === jsonFile.from
             let deleteComponent = jsonFile.delete && parseData[i].component[0] === jsonFile.delete
             let addComponent = jsonFile.add && getAdd().component[0] === jsonFile.add
+            let switchComponent = jsonFile.swtch && parseData[i].component[0] === jsonFile.switch
             let replaceProperty = (textOrStyle) => data.replace(textOrStyle[jsonFile.property], jsonFile.to)
 
             switch (true) {
@@ -64,6 +65,10 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                     return JSON.stringify(parseData, null, 2)
                 case addComponent:
                     parseData.push(getAdd())
+                    return JSON.stringify(parseData, null, 2)
+                case switchComponent:
+                    parseData.push(switchComponent[0])
+                    parseData.splice(parseData.indexOf(parseData[i]), 1)
                     return JSON.stringify(parseData, null, 2)
                 default:
                     console.log('error')
