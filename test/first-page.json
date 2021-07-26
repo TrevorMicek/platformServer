@@ -43,8 +43,8 @@
         "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use."
       }
     ],
-    "style": {
-      "wrapper": {
+    "style": [
+      {"wrapper": {
       "margin": "0 auto 7.5vh auto",
       "paddingTop": "2vh",
       "textAlign": "center",
@@ -52,17 +52,18 @@
       "border": "1px solid lightgray",
       "borderRadius": "5%",
       "boxShadow": "2px 2px 4px 2px lightgray"
-      },
-      "text" : {
+      }},
+      {"text" : {
         "color": "#1a1a1a",
     "margin": "6vh 5vw 1vh 5vw",
     "fontSize": "1.1rem",
     "position": "relative",
     "bottom": "3.5vh"
-      },
-      "img": {
+      }},
+      {"img": {
         "margin": "0 auto"
-      }
-    }
+      }}
+    ]
+    
   }
 ]
