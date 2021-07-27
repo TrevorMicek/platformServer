@@ -44,15 +44,15 @@
       }
     ],
     "style": [
-      {"wrapper": {
-      "margin": "0 auto 7.5vh auto",
-      "paddingTop": "2vh",
-      "textAlign": "center",
-      "width": "67vw",
-      "border": "1px solid lightgray",
-      "borderRadius": "5%",
-      "boxShadow": "2px 2px 4px 2px lightgray"
-      }},
+      {"wrapper": [
+      {"margin": "0 auto 7.5vh auto"},
+      {"paddingTop": "2vh"},
+      {"textAlign": "center"},
+      {"width": "67vw"},
+      {"border": "1px solid lightgray"},
+      {"borderRadius": "5%"},
+      {"boxShadow": "2px 2px 4px 2px lightgray"}
+      ]},
       {"text" : {
         "color": "#1a1a1a",
     "margin": "6vh 5vw 1vh 5vw",
