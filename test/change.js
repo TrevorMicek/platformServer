@@ -16,7 +16,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
    
     let parseData = JSON.parse(data)
          
-   console.log('change is called')
+
     fs.readFile('./test/CompStore.json', "utf8", function(err, pageData) {
 
     if (err) throw err;
@@ -59,7 +59,8 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                 case changeText:
                     return replaceProperty(parseData[i].text[jsonFile.position - 1])
                 case changeStyle:
-                    return replaceProperty(parseData[i].style[jsonFile.property])
+                    console.log(parseData[i].style[jsonFile.position][jsonFile.property])
+                    return replaceProperty(parseData[i].style[jsonFile.position][jsonFile.property])
                 case deleteComponent && addComponent:
                     parseData.splice(parseData.indexOf(parseData[1]), 1)
                     return JSON.stringify(parseData, null, 2)
@@ -78,7 +79,7 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
     
   }
  let myCallBack = function(data) {
-     console.log('added')
+   
     return data()
     
  }
