@@ -6,7 +6,7 @@
     "text": [
       {
         "first": {
-          "title": "A New Way of Doing Websites",
+          "title": "SecondSection data color to blue",
           "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
         }
       }
@@ -45,7 +45,7 @@
     "style": [
       {
         "wrapper": {
-          "margin": "0 auto 7.5vh auto",
+          "margin": "0",
           "paddingTop": "2vh",
           "textAlign": "center",
           "width": "67vw",
