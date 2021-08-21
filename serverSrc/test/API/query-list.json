@@ -1,15 +1,13 @@
 [
     {
-        "queries": [
-            "[component + property] to [new value]",
-            "add [component]",
-            "delete [component]",
+        "queryList": [
             "components",
             "queries",
             "add FirstSection",
             "add SecondSection",
             "delete FirstSection",
-            "delete SecondSection"
+            "delete SecondSection",
+            "switch FirstSection SecondSection"
             
         ]
     }

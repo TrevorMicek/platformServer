@@ -4,7 +4,7 @@
       "Holder"
     ],
     "text": [],
-    "style": []  
+    "style": []
   },
   {
     "component": [
@@ -12,14 +12,20 @@
     ],
     "text": [
       {
-        "title": "Websites Done Uniquely",
-        "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
+        "first": {
+          "title": "A New Way of Making Websites",
+          "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
+        }
       }
     ],
-    "style": [{
-      "color": "black",
-      "background": "white"
-    }]
+    "style": [
+      {
+        "wrapper": {
+          "color": "black",
+          "background": "white"
+        }
+      }
+    ]
   },
   {
     "component": [
@@ -44,101 +50,31 @@
       }
     ],
     "style": [
-      {"wrapper": {
-      "margin": "0 auto 7.5vh auto",
-      "paddingTop": "2vh",
-      "textAlign": "center",
-      "width": "67vw",
-      "border": "1px solid lightgray",
-      "borderRadius": "5%",
-      "boxShadow": "2px 2px 4px 2px lightgray"
-      }},
-     {"text" : {
-        "color": "#1a1a1a",
-    "margin": "6vh 5vw 1vh 5vw",
-    "fontSize": "1.1rem",
-    "position": "relative",
-    "bottom": "3.5vh"
-      }},
-      {"img": {
-        "margin": "0 auto"
-      }}
+      {
+        "wrapper": {
+          "margin": "0 auto 7.5vh auto",
+          "paddingTop": "2vh",
+          "textAlign": "center",
+          "width": "67vw",
+          "border": "1px solid lightgray",
+          "borderRadius": "5%",
+          "boxShadow": "2px 2px 4px 2px lightgray"
+        }
+      },
+      {
+        "data": {
+          "color": "blue",
+          "margin": "6vh 5vw 1vh 5vw",
+          "fontSize": "1.1rem",
+          "position": "relative",
+          "bottom": "3.5vh"
+        }
+      },
+      {
+        "img": {
+          "margin": "0 auto"
+        }
+      }
     ]
-    
-  },
-  {
-    "component": [
-      "Section03"
-    ],
-    "text": [
-      {
-        "title": "Websites Done Uniquely",
-        "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-      }
-    ],
-    "style": [{
-      "color": "black",
-      "background": "white"
-    }]
-  },
-  {
-    "component": [
-      "Section04"
-    ],
-    "text": [
-      {
-        "title": "Websites Done Uniquely",
-        "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-      }
-    ],
-    "style": [{
-      "color": "black",
-      "background": "white"
-    }]
-  },
-  {
-    "component": [
-      "Section05"
-    ],
-    "text": [
-      {
-        "title": "Websites Done Uniquely",
-        "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-      }
-    ],
-    "style": [{
-      "color": "black",
-      "background": "white"
-    }]
-  },
-  {
-    "component": [
-      "Section06"
-    ],
-    "text": [
-      {
-        "title": "Websites Done Uniquely",
-        "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-      }
-    ],
-    "style": [{
-      "color": "black",
-      "background": "white"
-    }]
-  },
-  {
-    "component": [
-      "Section07"
-    ],
-    "text": [
-      {
-        "title": "Websites Done Uniquely",
-        "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-      }
-    ],
-    "style": [{
-      "color": "black",
-      "background": "white"
-    }]
   }
 ]
