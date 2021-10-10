@@ -1,9 +1,30 @@
 [
   {
     "component": [
-      "Holder"
+      "Layout"
     ],
-    "text": [],
+    "text": [
+      {
+        "navOne": "Home",
+        "navTwo": "Services",
+        "navThree": "About",
+        "navFour": "Store",
+        "navFive": "Contact",
+        "logo": "Websites By Trevor"
+      },
+      {
+        "headerTitle": "Small Business Web Design & Development",
+        "headerText": "Websites By Trevor"
+      },
+      {
+        "follow": "Follow Me!",
+        "navOne": "Home",
+        "navTwo": "Services",
+        "navThree": "About",
+        "navFour": "Store",
+        "navFive": "Contact"
+      }
+    ],
     "style": []
   },
   {
@@ -55,8 +76,8 @@
     "style": [
       {
         "wrapper": {
-          "margin": "0 auto 7.5vh auto",
           "paddingTop": "2vh",
+          "margin": "7vh",
           "textAlign": "center",
           "width": "67vw",
           "border": "1px solid lightgray",

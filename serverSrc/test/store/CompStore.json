@@ -12,10 +12,9 @@
     ],
     "text": [
       {
-        "first": {
-          "title": "A New Way of Making Websites",
-          "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-        }
+        "title": "A New Way of Making Websites",
+        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
       }
     ],
     "style": [
@@ -33,20 +32,24 @@
     ],
     "text": [
       {
-        "title": "Subscription",
-        "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts."
+        "title": "Subscription Based",
+        "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/subscription_tms2df.svg"
       },
       {
         "title": "Optimization",
-        "text": "Website speed is our driving force for a quality site. The number one reason visitors will leave your website is if it's too slow."
+        "text": "Website speed is our driving force for a quality site. The number one reason visitors will leave your website is if it's too slow.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507629/images/optimization_ckkeoy.svg"
       },
       {
         "title": "Mobile-First Design",
-        "text": "We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive."
+        "text": "We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/responsive-design_nvbljp.svg"
       },
       {
         "title": "User-Friendly",
-        "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use."
+        "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
       }
     ],
     "style": [
