@@ -12,10 +12,17 @@ const firstPage = './test/API/first-page.json'
 const changePage = require('./test/change');
 const { response } = require('express');
 
+let findOrigin = () => {
+    if (process.env.NODE_ENV === 'production') {
+        return "https://platformservice.netlify.app"
+    } else {
+        return "http://localhost:8000"
+    }
+}
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 let corsOptions = {
-    origin:"https://platformservice.netlify.app",
+    origin: findOrigin(),
     credentials: true
 }
 app.use(cors(corsOptions))
