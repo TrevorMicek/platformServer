@@ -33,8 +33,8 @@
     ],
     "text": [
       {
-        "title": "Making Websites In a New Way",
-        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:",
+        "title": "MakingWebsibbbbbnnnnn",
+        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
       }
     ],
@@ -43,7 +43,7 @@
         "wrapper": {
           "color": "black",
           "background": "white",
-          "width": "60vw"
+          "width": "50vw"
         }
       }
     ]
@@ -54,7 +54,7 @@
     ],
     "text": [
       {
-        "title": "SecondSection style",
+        "title": "Sub basedddddd",
         "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts.",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/subscription_tms2df.svg"
       },
@@ -80,7 +80,7 @@
           "paddingTop": "2vh",
           "margin": "7vh",
           "textAlign": "center",
-          "width": "50vw",
+          "width": "9vw",
           "border": "1px solid lightgray",
           "borderRadius": "5%",
           "boxShadow": "2px 2px 4px 2px lightgray"
