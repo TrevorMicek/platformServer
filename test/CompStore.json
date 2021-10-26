@@ -1,9 +1,30 @@
 [
   {
     "component": [
-      "Holder"
+      "Layout"
     ],
-    "text": [],
+    "text": [
+      {
+        "navOne": "Home",
+        "navTwo": "Services",
+        "navThree": "About",
+        "navFour": "Store",
+        "navFive": "Contact",
+        "logo": "Websites By Trevor"
+      },
+      {
+        "headerTitle": "Small Business Web Design & Development",
+        "headerText": "Websites By Trevor"
+      },
+      {
+        "follow": "Follow Me!",
+        "navOne": "Home",
+        "navTwo": "Services",
+        "navThree": "About",
+        "navFour": "Store",
+        "navFive": "Contact"
+      }
+    ],
     "style": []
   },
   {
@@ -12,17 +33,17 @@
     ],
     "text": [
       {
-        "first": {
-          "title": "A New Way of Making Websites",
-          "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-        }
+        "title": "MakingWebsibbbbbnnnnn",
+        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
       }
     ],
     "style": [
       {
         "wrapper": {
           "color": "black",
-          "background": "white"
+          "background": "white",
+          "width": "50vw"
         }
       }
     ]
@@ -33,29 +54,33 @@
     ],
     "text": [
       {
-        "title": "Subscription Based",
-        "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts."
+        "title": "Sub basedddddd",
+        "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/subscription_tms2df.svg"
       },
       {
         "title": "Optimization",
-        "text": "Website speed is our driving force for a quality site. The number one reason visitors will leave your website is if it's too slow."
+        "text": "Website speed is our driving force for a quality site. The number one reason visitors will leave your website is if it's too slow.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507629/images/optimization_ckkeoy.svg"
       },
       {
         "title": "Mobile-First Design",
-        "text": "We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive."
+        "text": "We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/responsive-design_nvbljp.svg"
       },
       {
         "title": "User-Friendly",
-        "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use."
+        "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
       }
     ],
     "style": [
       {
         "wrapper": {
-          "margin": "0 auto 7.5vh auto",
           "paddingTop": "2vh",
+          "margin": "7vh",
           "textAlign": "center",
-          "width": "67vw",
+          "width": "10vw",
           "border": "1px solid lightgray",
           "borderRadius": "5%",
           "boxShadow": "2px 2px 4px 2px lightgray"
@@ -63,7 +88,7 @@
       },
       {
         "data": {
-          "color": "blue",
+          "color": "black",
           "margin": "6vh 5vw 1vh 5vw",
           "fontSize": "1.1rem",
           "position": "relative",

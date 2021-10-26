@@ -4,16 +4,9 @@
       "Layout"
     ],
     "text": [
+      ["Home", "Services", "About", "Store", "Contact", "Websites By Trevor"],
       {
-        "navOne": "Home",
-        "navTwo": "Services",
-        "navThree": "About",
-        "navFour": "Store",
-        "navFive": "Contact",
-        "logo": "Websites By Trevor"
-      },
-      {
-        "headerTitle": "Small Business Web Design & Development",
+        "headerTitle": "Smallll  Web Design & Development",
         "headerText": "Websites By Trevor"
       },
       {
@@ -26,27 +19,6 @@
       }
     ],
     "style": []
-  },
-  {
-    "component": [
-      "FirstSection"
-    ],
-    "text": [
-      {
-        "title": "MakingWebsibbbbbnnnnn",
-        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being",
-        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
-      }
-    ],
-    "style": [
-      {
-        "wrapper": {
-          "color": "black",
-          "background": "white",
-          "width": "50vw"
-        }
-      }
-    ]
   },
   {
     "component": [
@@ -80,7 +52,7 @@
           "paddingTop": "2vh",
           "margin": "7vh",
           "textAlign": "center",
-          "width": "9vw",
+          "width": "50vw",
           "border": "1px solid lightgray",
           "borderRadius": "5%",
           "boxShadow": "2px 2px 4px 2px lightgray"
@@ -98,6 +70,27 @@
       {
         "img": {
           "margin": "0 auto"
+        }
+      }
+    ]
+  },
+  {
+    "component": [
+      "FirstSection"
+    ],
+    "text": [
+      {
+        "title": "MakingWebsibbbbbnnnnn",
+        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
+      }
+    ],
+    "style": [
+      {
+        "wrapper": {
+          "color": "black",
+          "background": "white",
+          "width": "50vw"
         }
       }
     ]
