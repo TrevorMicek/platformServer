@@ -40,7 +40,7 @@ app.use('/api/page/', express.static(path.join(__dirname, './test/API')));
 
  app.post("/api/page/:page", function(req, res) {
             //req.params.page === 'newSite.js' ? newSite(req.body.name) :
-                console.log(req.body)
+
             res.send(changePage(firstPage, req.body))
     })
 
