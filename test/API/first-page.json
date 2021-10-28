@@ -59,7 +59,7 @@
           "paddingTop": "2vh",
           "margin": "7vh",
           "textAlign": "center",
-          "width": "50vw",
+          "width": "10vw",
           "border": "1px solid lightgray",
           "borderRadius": "5%",
           "boxShadow": "2px 2px 4px 2px lightgray"
@@ -90,17 +90,28 @@
         "title": "MakingWebsibbbbbnnnnn",
         "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
+      }
+    ],
+    "elements": [
+      {
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
       },
       {
-        "image": ""
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
+      },
+      {
+        "title": "new Title blahsd"
+      },
+      {
+        "title": "old Title blahsd"
       }
     ],
     "style": [
       {
         "wrapper": {
-          "color": "black",
-          "background": "white",
-          "width": "50vw"
+          "color": "purple",
+          "background": "grey",
+          "width": "45vw"
         }
       }
     ]
