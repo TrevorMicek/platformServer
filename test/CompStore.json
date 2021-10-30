@@ -4,14 +4,14 @@
       "Layout"
     ],
     "text": [
-      {
-        "navOne": "Home",
-        "navTwo": "Services",
-        "navThree": "About",
-        "navFour": "Store",
-        "navFive": "Contact",
-        "logo": "Websites By Trevor"
-      },
+      [
+        "Home",
+        "Services",
+        "About",
+        "Store",
+        "Contact",
+        "Websites By Trevor"
+      ],
       {
         "headerTitle": "Small Business Web Design & Development",
         "headerText": "Websites By Trevor"
@@ -33,17 +33,18 @@
     ],
     "text": [
       {
-        "title": "MakingWebsibbbbbnnnnn",
-        "text": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being",
+        "title": "A New Way of Making Websites",
+        "text": "Websites By Trevor is aiming to change how small business web design & development is being done. The main difference is we build single page applications and work to bring those high quality sites to small businesses like yours, or your clients'. There are a few other key differences you will find, the main differences being:",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
       }
     ],
     "style": [
       {
         "wrapper": {
+          "margin": "2vh auto",
           "color": "black",
           "background": "white",
-          "width": "50vw"
+          "width": "75vw"
         }
       }
     ]
@@ -54,33 +55,32 @@
     ],
     "text": [
       {
-        "title": "Sub basedddddd",
-        "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts.",
-        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/subscription_tms2df.svg"
+        "title": "100% Custom Code",
+        "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality for you or your clients. Meaning our sites are higher quality and always faster to load from less files and KB. Other developers, custom or page built, can't compete with our quality.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
       },
       {
         "title": "Optimization",
-        "text": "Website speed is our driving force for a quality site. The number one reason visitors will leave your website is if it's too slow.",
+        "text": "A simple and easy to use website is a priority, but optimization & speed is our driving force for a high quality site. The number one reason visitors will leave your website is if it's too slow, or not user-friendly. But optimization also includes making every site accessible and SEO friendly to rank higher on Google.",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507629/images/optimization_ckkeoy.svg"
       },
       {
-        "title": "Mobile-First Design",
-        "text": "We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive.",
-        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/responsive-design_nvbljp.svg"
+        "title": "Subscription OR Upfront",
+        "text": "I personally have created a new pricing model so you can choose between our unique subscription w/ NO SETUP FEE, or the normal website pricing of 50% down & 50% when the site is all done, with almost no monthly cost. Either way you enjoy affordable packages, simple contracts, & no hidden fees.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/subscription_tms2df.svg"
       },
       {
-        "title": "User-Friendly",
-        "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use.",
-        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
+        "title": "Wholesale Websites",
+        "text": "We work directly with business consultants, SEO specialists, graphic designers, and other professional services to bring high quality websites to small businesses. If that's you, our wholesale websites are perfect for you and your clients. We also offer high quality retail sites directly to product and service businesses if that's you.",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/responsive-design_nvbljp.svg"
       }
     ],
     "style": [
       {
         "wrapper": {
+          "margin": "0 auto 7.5vh auto",
           "paddingTop": "2vh",
-          "margin": "7vh",
-          "textAlign": "center",
-          "width": "10vw",
+          "width": "75vw",
           "border": "1px solid lightgray",
           "borderRadius": "5%",
           "boxShadow": "2px 2px 4px 2px lightgray"
