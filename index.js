@@ -14,7 +14,7 @@ const { response } = require('express');
 
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "https://adibuilder.netlify.app"
+        return "https://platformservice.netlify.app/"
     } else {
         return "http://localhost:8000"
     }
