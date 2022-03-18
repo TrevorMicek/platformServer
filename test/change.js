@@ -129,10 +129,10 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
             switch (true) {
                 case addElement:
                     let newEl = {
-                        [jsonFile.to] : ''
+                        [jsonFile.to] : ""
                     }
-                    console.log('addElement')
-                    parseData[parseData.indexOf(component[0])].text[0][jsonFile.to] = ''
+                    console.log(jsonFile.to)
+                    parseData[parseData.indexOf(component[0])].text.push(newEl)
                     return JSON.stringify(parseData, null, 2)
                 case changeText:
                     console.log('text')
