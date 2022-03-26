@@ -77,8 +77,10 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
             let deleteComponent = jsonFile.delete && parseData[i].component[0] === jsonFile.delete
             let addComponent = jsonFile.add && getAdd() && getAdd().component[0] === jsonFile.add
             let switchComponent = jsonFile.switch && parseData[i].component[0] === jsonFile.switch[0]
-            let addElement = parseData[i].component[0] === jsonFile.from && component[0].text && !jsonFile.position && !jsonFile.property
-             console.log(parseData[i].component[0] === jsonFile.add)
+            let addElement = parseData[i].component[0] === jsonFile.from && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
+
+            let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
+                console.log(jsonFile)
             let replaceText = (textOrStyle) => {
                console.log('text')
                let toReplace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2).replace(component[0].text[jsonFile.position][jsonFile.property], `${jsonFile.to}`)
@@ -128,11 +130,26 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
              //.style[0][jsonFile.position][jsonFile.property]
             switch (true) {
                 case addElement:
-                    let newEl = {
-                        [jsonFile.to] : ""
+                    let newEl = {}
+                    let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
+                    let createEl = () => {
+                        for (let i=0;i<elementKeys.length;i++) {
+
+                            newEl[elementKeys[i]] = `New ${elementKeys[i]}`
+
+                            }
+                            return newEl
+
                     }
-                    console.log(jsonFile.to)
+                    console.log(createEl())
                     parseData[parseData.indexOf(component[0])].text.push(newEl)
+                    return JSON.stringify(parseData, null, 2)
+                case deleteElement:
+
+
+
+                    console.log(parseData.indexOf(parseData[i]))
+                    parseData[parseData.indexOf(component[0])].text.splice(jsonFile.position, 1)
                     return JSON.stringify(parseData, null, 2)
                 case changeText:
                     console.log('text')
