@@ -1,54 +1,16 @@
 [
   {
     "component": [
-      "Layout"
+      "Header"
     ],
     "text": [
-      [
-        "Home",
-        "Services",
-        "About",
-        "Store",
-        "Contact",
-        "Websites By Trevor",
-        "Follow Me!"
-      ],
       {
-        "headerTitle": "Small Business Web Design & Development",
-        "headerText": "Websites By Trevor"
-      },
-      {
-        "follow": "Follow Me!",
-        "navOne": "Home",
-        "navTwo": "Services",
-        "navThree": "About",
-        "navFour": "Store",
-        "navFive": "Contact"
+        "title": "Eclipse Builderss",
+        "text": "A better website build",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
       }
     ],
     "style": []
-  },
-  {
-    "component": [
-      "FirstSection"
-    ],
-    "text": [
-      {
-        "title": "A New Way of Making Websites",
-        "text": "Websites By Trevor is aiming to change how small business web design & development is being done. The main difference is we build single page applications and work to bring those high quality sites to small businesses like yours, or your clients'. There are a few other key differences you will find, the main differences being:",
-        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
-      }
-    ],
-    "style": [
-      {
-        "wrapper": {
-          "margin": "2vh auto",
-          "color": "black",
-          "background": "white",
-          "width": "75vw"
-        }
-      }
-    ]
   },
   {
     "component": [
@@ -56,8 +18,8 @@
     ],
     "text": [
       {
-        "title": "Custom Code",
-        "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality for you or your clients. Meaning our sites are higher quality and always faster to load from less files and KB. Other developers, custom or page built, can't compete with our quality.",
+        "title": "100% Custom Code",
+        "text": "All of our sites are made from scratch using our own code. This allows us full control over the design <br />and functionality for you or your clients. Meaning our sites are higher quality and always faster to load from less files and KB. Other developers, custom or page built, can't compete with our quality.",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
       },
       {
@@ -99,6 +61,28 @@
       {
         "img": {
           "margin": "0 auto"
+        }
+      }
+    ]
+  },
+  {
+    "component": [
+      "FirstSection"
+    ],
+    "text": [
+      {
+        "title": "A New Way of Making Websites",
+        "text": "Websites By Trevor is aiming to change how small business web design & development is being done. The main difference is we build single page applications and work to bring those high quality sites to small businesses like yours, or your clients'. There are a few other key differences you will find, the main differences being:",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
+      }
+    ],
+    "style": [
+      {
+        "wrapper": {
+          "margin": "2vh auto",
+          "color": "black",
+          "background": "white",
+          "width": "75vw"
         }
       }
     ]

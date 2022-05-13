@@ -146,10 +146,10 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:
 
-
-
+                        let index = jsonFile.to - 1
+                    console.log(index)
                     console.log(parseData.indexOf(parseData[i]))
-                    parseData[parseData.indexOf(component[0])].text.splice(jsonFile.position, 1)
+                    parseData[parseData.indexOf(component[0])].text.splice(index, 1)
                     return JSON.stringify(parseData, null, 2)
                 case changeText:
                     console.log('text')
@@ -167,8 +167,24 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                     parseData.push(getAdd())
                     return JSON.stringify(parseData, null, 2)
                 case switchComponent:
-                    console.log('switch')
+                    let isFirst = () => {
+
+                        if (parseData.indexOf(parseData[i]) === 2) {
+                            jsonFile.add = jsonFile.switch[0]
+                            console.log(parseData[i].component)
+                            parseData.splice(parseData.indexOf(parseData[2]), 1)
+                            parseData.push(getAdd())
+                        } else {
+                            console.log("is 1")
+                            jsonFile.add = jsonFile.switch[0]
+                    parseData.splice(parseData.indexOf(parseData[i]), 1)
+                    parseData.push(getAdd())
+                        }
+                    }
+
+
                     jsonFile.add = jsonFile.switch[0]
+                    console.log(jsonFile.switch)
                     parseData.splice(parseData.indexOf(parseData[i]), 1)
                     parseData.push(getAdd())
                     return JSON.stringify(parseData, null, 2)
