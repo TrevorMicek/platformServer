@@ -132,22 +132,13 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
                 case addElement:
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
-                    let createEl = () => {
-                        for (let i=0;i<elementKeys.length;i++) {
+                    parseData[parseData.indexOf(component[0])].text[0].elements.push({[jsonFile.to]: ""})
 
-                            newEl[elementKeys[i]] = `New ${elementKeys[i]}`
-
-                            }
-                            return newEl
-
-                    }
-                    console.log(createEl())
-                    parseData[parseData.indexOf(component[0])].text.push(newEl)
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:
 
                         let index = jsonFile.to - 1
-                    console.log(index)
+                    console.log(jsonFile.to)
                     console.log(parseData.indexOf(parseData[i]))
                     parseData[parseData.indexOf(component[0])].text.splice(index, 1)
                     return JSON.stringify(parseData, null, 2)
