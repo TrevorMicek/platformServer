@@ -82,15 +82,23 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
                 console.log(jsonFile)
             let replaceText = (textOrStyle) => {
-               console.log('text')
-               let toReplace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2).replace(component[0].text[jsonFile.position][jsonFile.property], `${jsonFile.to}`)
-               let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace)
+               console.log(component[0].text[jsonFile.position][jsonFile.property][0].title)
+               let toReplace = () => {
+                if (jsonFile.property === 'element') {
+                    let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
+                    return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
+                } else {
+                let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2).replace(component[0].text[jsonFile.position][jsonFile.property], `${jsonFile.to}`)
+                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), replace)
+                }
+                }
+                let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace())
 
               // let compToReplace = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2)
 
                //console.log(data.replace(`"${JSON.stringify(component[0])}"`, `"${oldProperty}"`))
                 //console.log(oldProperty)
-                parseData.splice(parseData.indexOf(component[0]), 1, JSON.parse(oldProperty))
+                parseData.splice(parseData.indexOf(component[0]), 1, JSON.parse(toReplace()))
 
 
                 return JSON.stringify(parseData, null, 2)
@@ -130,17 +138,18 @@ fs.readFile(`${filePath}`, "utf8", function(err, data) {
              //.style[0][jsonFile.position][jsonFile.property]
             switch (true) {
                 case addElement:
+                    console.log('add El')
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
-                    parseData[parseData.indexOf(component[0])].text[0].elements.push({[jsonFile.to]: ""})
+                    parseData[parseData.indexOf(component[0])].text[0].element.push({[jsonFile.to]: ""})
 
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:
+                console.log('delete El')
+                        let index =  jsonFile.to
+                    console.log(parseData[parseData.indexOf(component[0])].text[0].element[1])
 
-                        let index = jsonFile.to - 1
-                    console.log(jsonFile.to)
-                    console.log(parseData.indexOf(parseData[i]))
-                    parseData[parseData.indexOf(component[0])].text.splice(index, 1)
+                    parseData[parseData.indexOf(component[0])].text[0].element.splice(index, 1)
                     return JSON.stringify(parseData, null, 2)
                 case changeText:
                     console.log('text')
