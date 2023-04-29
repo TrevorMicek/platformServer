@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for edit-api on 2023-04-26T19:43:05-06:00
+# fly.toml app configuration file generated for edit-api on 2023-04-28T16:20:49-06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -6,15 +6,11 @@
 app = "edit-api"
 primary_region = "den"
 
+[build]
+  image = "flyio/edit-api:latest"
+
 [http_service]
   internal_port = 8080
   force_https = true
   auto_stop_machines = true
   auto_start_machines = true
-
-[checks]
-  [checks.alive]
-    type = "tcp"
-    interval = "15s"
-    timeout = "2s"
-    grace_period = "5s"

@@ -14,7 +14,7 @@ const writeCart = (filePath, jsonFile) => {
 
 fs.readFile(`${filePath}`, "utf8", function(err, data) {
     if (err) throw err;
-
+console.log(filePath, 'here')
     let parseData = JSON.parse(data)
 
 

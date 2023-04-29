@@ -1,6 +1,23 @@
 [
   {
     "component": [
+      "Layout"
+    ],
+    "text": [
+      {
+        "title": ""
+      }
+    ],
+    "style": [
+      {
+        "wrapper": {
+          "backgroundColor": "black"
+        }
+      }
+    ]
+  },
+  {
+    "component": [
       "Header"
     ],
     "text": [
@@ -22,9 +39,14 @@
         "text": "Websites By Trevor is aiming to change how small business web design & development is being done. The main difference is we build single page applications and work to bring those high quality sites to small businesses like yours, or your clients'. There are a few other key differences you will find, the main differences being:",
         "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
         "element": [
-
+          {
+            "title": "title"
+          },
           {
             "text": "type here"
+          },
+          {
+            "text": "second para"
           }
         ]
       }
@@ -32,10 +54,10 @@
     "style": [
       {
         "wrapper": {
-          "margin": "2vh auto",
+          "margin": "5vh auto",
           "color": "black",
           "background": "white",
-          "width": "75vw"
+          "width": "45vw"
         }
       }
     ]
