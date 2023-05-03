@@ -14,7 +14,7 @@ const { response } = require('express');
 
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "https://platformservice.netlify.app"
+        return "https://eclipsebuilder.vercel.app/"
     } else {
         return "http://localhost:3000"
     }
