@@ -84,6 +84,10 @@ console.log(filePath, 'here')
             let replaceText = (textOrStyle) => {
                console.log(component[0].text[jsonFile.position][jsonFile.property][0].title)
                let toReplace = () => {
+                if (jsonFile.property === 'list') {
+                    let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
+                    return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
+                }
                 if (jsonFile.property === 'element') {
                     let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
                     return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
@@ -138,15 +142,15 @@ console.log(filePath, 'here')
              //.style[0][jsonFile.position][jsonFile.property]
             switch (true) {
                 case addElement:
-                    console.log('add El')
+                    console.log('add El', jsonFile.to)
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
-                    parseData[parseData.indexOf(component[0])].text[0].element.push({[jsonFile.to]: ""})
+                    parseData[parseData.indexOf(component[0])].text[0].element.push({[jsonFile.to]: `New ${jsonFile.to}`})
 
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:
                 console.log('delete El')
-                        let index =  jsonFile.to
+                        let index =  jsonFile.to - 1
                     console.log(parseData[parseData.indexOf(component[0])].text[0].element[1])
 
                     parseData[parseData.indexOf(component[0])].text[0].element.splice(index, 1)
