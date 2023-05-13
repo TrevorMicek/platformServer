@@ -145,11 +145,9 @@ console.log(filePath, 'here')
                     console.log('add El', jsonFile.to)
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
-                    parseData[parseData.indexOf(component[0])].text[0][jsonFile.to] = {
-                        "text": "Type here...",
-                        "element": "h2",
-                        "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
-                      }
+                    parseData[parseData.indexOf(component[0])].text[0].data.push({
+                        [jsonFile.to]: "Type here..."
+                      })
 
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:

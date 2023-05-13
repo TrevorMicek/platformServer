@@ -55,42 +55,46 @@
     ],
     "text": [
       {
-      "benefit1": {
+        "data": [
+          {
+            "title": "Ø Monthly Cost"
+          },
+          {
+            "text": "Maintenance and edits are all built right into each website package so there's no annoying monthly subscription."
+          },
+          {
+            "title": "100% Custom Solution"
+          },
+          {
+            "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality, leading to more traffic and conversions."
+          },
+          {
+            "title": "Performance"
+          },
+          {
+            "text": "The #1 reason visitors will leave a website is if it's slow to load. Our sites are lightning fast, accessible and SEO friendly to rank higher on Google and provide a better user experience."
+          },
+          {
+            "title": "Affordable Pricing"
+          },
+          {
+            "text": "We use a unique pricing model, so you enjoy affordable packages, roughly half the price of others, no monthly maintenance fee & no hidden fees."
+          }
 
-        "text": "text",
-        "element": "h2",
-        "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
-      },
-      "benefit2": {
-
-        "text": "text",
-        "element": "h2",
-        "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
-      },
-      "benefit3": {
-
-        "text": "text",
-        "element": "h2",
-        "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
-      },
-      "benefit4": {
-
-        "text": "text",
-        "element": "h2",
-        "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
+        ]
       }
-    }
+    ],
+    "elements": [
+      {
+        "title": "h2",
+        "text": "p"
+      }
     ],
     "style": [
       {
-        "wrapper": {
-          "margin": "0 auto 7.5vh auto",
-          "paddingTop": "2vh",
-          "width": "75vw",
-          "border": "1px solid lightgray",
-          "borderRadius": "5%",
-          "boxShadow": "2px 2px 4px 2px lightgray"
-        }
+        "title": "ml-16 text-lg leading-6 font-medium text-gray-900",
+        "text": "mt-2 ml-16 text-base text-gray-600"
+
       }
     ]
   }
