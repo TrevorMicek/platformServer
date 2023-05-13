@@ -82,7 +82,7 @@ console.log(filePath, 'here')
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
                 console.log(jsonFile)
             let replaceText = (textOrStyle) => {
-               console.log(component[0].text[jsonFile.position][jsonFile.property][0].title)
+
                let toReplace = () => {
                 if (jsonFile.property === 'list') {
                     let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
@@ -92,8 +92,8 @@ console.log(filePath, 'here')
                     let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
                     return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
                 } else {
-                let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2).replace(component[0].text[jsonFile.position][jsonFile.property], `${jsonFile.to}`)
-                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), replace)
+                let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property].text, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property].text, `${jsonFile.to}`)
+                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property].text, null, 2), replace)
                 }
                 }
                 let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace())
@@ -145,7 +145,11 @@ console.log(filePath, 'here')
                     console.log('add El', jsonFile.to)
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
-                    parseData[parseData.indexOf(component[0])].text[0].element.push({[jsonFile.to]: `New ${jsonFile.to}`})
+                    parseData[parseData.indexOf(component[0])].text[0][jsonFile.to] = {
+                        "text": "Type here...",
+                        "element": "h2",
+                        "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
+                      }
 
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:
