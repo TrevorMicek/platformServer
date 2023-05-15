@@ -80,7 +80,7 @@ console.log(filePath, 'here')
             let addElement = parseData[i].component[0] === jsonFile.from && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
 
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
-                console.log(jsonFile)
+             console.log(jsonFile)
             let replaceText = (textOrStyle) => {
 
                let toReplace = () => {
@@ -92,8 +92,9 @@ console.log(filePath, 'here')
                     let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
                     return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
                 } else {
-                let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property].text, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property].text, `${jsonFile.to}`)
-                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property].text, null, 2), replace)
+
+                let replace = JSON.stringify(component[0].text[0].data[jsonFile.position][jsonFile.property], null, 2).replace(component[0].text[0].data[jsonFile.position][jsonFile.property], `${jsonFile.to}`)
+                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[0].data[jsonFile.position][jsonFile.property], null, 2), replace)
                 }
                 }
                 let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace())

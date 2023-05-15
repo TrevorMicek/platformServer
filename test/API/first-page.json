@@ -11,63 +11,18 @@
     "style": [
       {
         "wrapper": {
-          "backgroundColor": "white",
+          "backgroundColor": "default",
           "fontColor": "",
           "fontSize": ""
         },
         "secondary": {
-          "backgroundColor": "black",
+          "backgroundColor": "bg-bg",
           "color": "white"
         }
       }
     ]
   },
-  {
-    "component": [
-      "Header"
-    ],
-    "text": [
-      {
-        "title": "Eclipse builder",
-        "text": "A better website build",
-        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507630/images/user_irvvg2.svg"
-      }
-    ],
-    "style": []
-  },
-  {
-    "component": [
-      "FirstSection"
-    ],
-    "text": [
-      {
-        "text": [
-          {
-            "text": "Affordable and coded by hands",
-            "element": "h2",
-            "styles": "mt-4 text-base text-default font-semibold tracking-wide uppercase"
-          },
-          {
-            "text": "A New Way of Making Websites",
-            "element": "p",
-            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
-          },
-          {
-            "text": "We are revolutionizing the world of small business web design and development with our cutting-edge page builder that offers an affordable, all-in-one website solution for businesses like yours. Our platform eliminates the need for hand coding by providing easy-to-use tools for creating and customizing websites, while still delivering the high-quality design and functionality that your business needs to succeed online.",
-            "element": "p",
-            "styles": " mt-4 relative z-10 max-w-2xl text-xl text-gray-600 lg:mx-auto"
-          }
-        ]
-      }
-    ],
-    "style": [
-      {
-        "title": {
-          "color": "black"
-        }
-      }
-    ]
-  },
+
   {
     "component": [
       "SecondSection"
@@ -76,10 +31,19 @@
       {
         "data": [
           {
+            "sectionTitle": "benefits"
+          },
+          {
+            "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
+          },
+          {
             "title": "Ø Monthly Cost"
           },
           {
             "text": "Maintenance and edits are all built right into each website package so there's no annoying monthly subscription."
+          },
+          {
+            "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
           },
           {
             "title": "100% Custom Solution"
@@ -88,10 +52,16 @@
             "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality, leading to more traffic and conversions."
           },
           {
+            "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
+          },
+          {
             "title": "Performance"
           },
           {
             "text": "The #1 reason visitors will leave a website is if it's slow to load. Our sites are lightning fast, accessible and SEO friendly to rank higher on Google and provide a better user experience."
+          },
+          {
+            "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
           },
           {
             "title": "Affordable Pricing"
@@ -104,14 +74,61 @@
     ],
     "elements": [
       {
+        "sectionTitle": "h2",
         "title": "h2",
-        "text": "p"
+        "text": "p",
+        "image": "img"
       }
     ],
     "style": [
       {
+        "sectionTitle": "mt-5 mb-6 text-base text-default font-semibold tracking-wide uppercase",
         "title": "ml-16 text-lg leading-6 font-medium text-gray-900",
-        "text": "mt-2 ml-16 text-base text-gray-600"
+        "text": "mt-2 ml-16 text-base text-gray-600",
+        "image": " absolute mt-5 h-6 w-6",
+        "wrapper": " absolute  flex items-center justify-center h-12 w-12 rounded-md bg-grn text-white"
+      }
+    ]
+  },
+  {
+    "component": [
+      "Footer"
+    ],
+    "text": [
+      {
+        "data": [
+          {
+            "sectionTitle": "Affordable, Custom"
+          },
+          {
+            "title": "Ecommerce Websites"
+          },
+          {
+            "text": "High quality websites for services and products. Attract more customers with a better website."
+          },
+          {
+            "button": "Learn More"
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "sectionTitle": "h2",
+        "title": "h2",
+        "text": "p",
+        "button": "button",
+        "image": "img"
+      }
+    ],
+    "style": [
+      {
+        "sectionTitle": "mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl",
+        "title": " text-default mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl",
+        "text": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl min-w-full ",
+        "image": " absolute mt-5 h-6 w-6",
+        "button": "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green w-full inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green",
+        "wrapper": "pt-10 bg-bg sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
       }
     ]
   }
