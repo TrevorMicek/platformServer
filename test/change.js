@@ -73,16 +73,16 @@ console.log(filePath, 'here')
             //let changed = parseData[i].style.map(comp => comp[jsonFile.position])[0]
 
             let changeStyle = component[0] && component[0].style && component[0].style[i] && component[0].style[i][jsonFile.position] && component[0].component[0] === jsonFile.from
-			let changeText = component[0] && component[0].text[jsonFile.position] && component[0].text[jsonFile.position][jsonFile.property] && component[0].component[0] === jsonFile.from
+			let changeText = component[0] && component[0].text[0].data[jsonFile.position] && component[0].text[0].data[jsonFile.position][jsonFile.property] && component[0].component[0] === jsonFile.from
             let deleteComponent = jsonFile.delete && parseData[i].component[0] === jsonFile.delete
             let addComponent = jsonFile.add && getAdd() && getAdd().component[0] === jsonFile.add
             let switchComponent = jsonFile.switch && parseData[i].component[0] === jsonFile.switch[0]
             let addElement = parseData[i].component[0] === jsonFile.from && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
 
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
-             console.log(jsonFile)
+            console.log(jsonFile)
             let replaceText = (textOrStyle) => {
-
+                console.log('made it')
                let toReplace = () => {
                 if (jsonFile.property === 'list') {
                     let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
@@ -97,7 +97,7 @@ console.log(filePath, 'here')
                 return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[0].data[jsonFile.position][jsonFile.property], null, 2), replace)
                 }
                 }
-                let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace())
+                //let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace())
 
               // let compToReplace = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2)
 
@@ -195,6 +195,8 @@ console.log(filePath, 'here')
                     parseData.splice(parseData.indexOf(parseData[i]), 1)
                     parseData.push(getAdd())
                     return JSON.stringify(parseData, null, 2)
+                default:
+                    console.log('error')
             }
             //console.log(changeText, changeStyle, deleteComponent, addComponent)
 
