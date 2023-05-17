@@ -71,16 +71,16 @@ console.log(filePath, 'here')
              //console.log(jsonFile.switch[0] === parseData[i].component[0])
              //[0][jsonFile.position][jsonFile.property]
             //let changed = parseData[i].style.map(comp => comp[jsonFile.position])[0]
-
+console.log(jsonFile)
             let changeStyle = component[0] && component[0].style && component[0].style[i] && component[0].style[i][jsonFile.position] && component[0].component[0] === jsonFile.from
-			let changeText = component[0] && component[0].text[0].data[jsonFile.position] && component[0].text[0].data[jsonFile.position].text && component[0].component[0] === jsonFile.from
+			let changeText =  jsonFile.position !== "wrapper" && component[0] && component[0].text[0].data[jsonFile.position] && component[0].text[0].data[jsonFile.position].text && component[0].component[0] === jsonFile.from
             let deleteComponent = jsonFile.delete && parseData[i].component[0] === jsonFile.delete
             let addComponent = jsonFile.add && getAdd() && getAdd().component[0] === jsonFile.add
             let switchComponent = jsonFile.switch && parseData[i].component[0] === jsonFile.switch[0]
             let addElement = parseData[i].component[0] === jsonFile.from && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
 
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
-            console.log(jsonFile)
+
             let replaceText = (textOrStyle) => {
                 console.log('made it')
                let toReplace = () => {
@@ -147,7 +147,9 @@ console.log(filePath, 'here')
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
                     parseData[parseData.indexOf(component[0])].text[0].data.push({
-                        [jsonFile.to]: "Type here..."
+                        text: "Type here...",
+                        "element": "p",
+            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
                       })
 
                     return JSON.stringify(parseData, null, 2)
