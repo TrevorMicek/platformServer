@@ -73,7 +73,7 @@ console.log(filePath, 'here')
             //let changed = parseData[i].style.map(comp => comp[jsonFile.position])[0]
 
             let changeStyle = component[0] && component[0].style && component[0].style[i] && component[0].style[i][jsonFile.position] && component[0].component[0] === jsonFile.from
-			let changeText = component[0] && component[0].text[0].data[jsonFile.position] && component[0].text[0].data[jsonFile.position][jsonFile.property] && component[0].component[0] === jsonFile.from
+			let changeText = component[0] && component[0].text[0].data[jsonFile.position] && component[0].text[0].data[jsonFile.position].text && component[0].component[0] === jsonFile.from
             let deleteComponent = jsonFile.delete && parseData[i].component[0] === jsonFile.delete
             let addComponent = jsonFile.add && getAdd() && getAdd().component[0] === jsonFile.add
             let switchComponent = jsonFile.switch && parseData[i].component[0] === jsonFile.switch[0]
@@ -93,8 +93,8 @@ console.log(filePath, 'here')
                     return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
                 } else {
 
-                let replace = JSON.stringify(component[0].text[0].data[jsonFile.position][jsonFile.property], null, 2).replace(component[0].text[0].data[jsonFile.position][jsonFile.property], `${jsonFile.to}`)
-                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[0].data[jsonFile.position][jsonFile.property], null, 2), replace)
+                let replace = JSON.stringify(component[0].text[0].data[jsonFile.position].text, null, 2).replace(component[0].text[0].data[jsonFile.position].text, `${jsonFile.to}`)
+                return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[0].data[jsonFile.position].text, null, 2), replace)
                 }
                 }
                 //let oldProperty = JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property], null, 2), toReplace())
