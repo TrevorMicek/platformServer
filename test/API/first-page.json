@@ -182,6 +182,62 @@
   },
   {
     "component": [
+      "ThirdSection"
+    ],
+    "text": [
+      {
+        "data": [
+          {
+            "text": "Our Portfolio",
+            "element": "h2",
+            "styles": "mt-2 max-w-3xl mx-auto text-4xl leading-8 font-extrabold tracking-tight text-default text-center lg:ml-16"
+          }
+        ]
+      }
+    ],
+    "style": [
+      {
+        "title": {
+          "color": "black"
+        }
+      }
+    ]
+  },
+  {
+    "component": [
+      "FourthSection"
+    ],
+    "text": [
+      {
+        "data": [
+          {
+            "text": "Ready to dive in",
+            "element": "h2",
+            "styles": "block text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl"
+          },
+          {
+            "text": "See how we can help you",
+            "element": "h2",
+            "styles": "block text-3xl text-default font-extrabold tracking-tight  md:text-4xl"
+          },
+          {
+            "text": "Our Services",
+            "element": "button",
+            "styles": "inline-flex rounded-md shadow inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-default hover:text-wh hover:bg-grn"
+          }
+        ]
+      }
+    ],
+    "style": [
+      {
+        "title": {
+          "color": "black"
+        }
+      }
+    ]
+  },
+  {
+    "component": [
       "Footer"
     ],
     "text": [
