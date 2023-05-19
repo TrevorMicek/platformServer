@@ -30,16 +30,18 @@ app.use(cors(corsOptions))
 
 
 if (process.env.NODE_ENV === 'production') {
-
+    app.use(express.static(path.join(__dirname, './public')))
     app.use('/api/page/', express.static(path.join(__dirname, './test/API')));
 
+} else {
+    app.use(express.static(path.join(__dirname, './public')))
 }
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname))
 })
 
 app.use('/api/page/', express.static(path.join(__dirname, './test/API')));
-
+app.use(express.static(path.join(__dirname, './public')))
  app.post("/api/page/:page", function(req, res) {
             //req.params.page === 'newSite.js' ? newSite(req.body.name) :
 
