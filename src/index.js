@@ -16,7 +16,7 @@ let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
         return "https://eclipsebuilder.vercel.app"
     } else {
-        return "http://localhost:4000"
+        return "http://localhost:3000"
     }
 }
 
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/page/', express.static(path.join(__dirname, './test/API')));
-app.use(express.static(path.join(__dirname, './public')))
+app.use('/',express.static(path.join(__dirname, './public')))
  app.post("/api/page/:page", function(req, res) {
             //req.params.page === 'newSite.js' ? newSite(req.body.name) :
 
