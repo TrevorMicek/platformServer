@@ -1,9 +1,9 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const makeNewSite = (name) => {
-
-    fs.readFile("./src/public/index.html", "utf8", function(err, data) {
+const makeNewSite = (copy, to) => {
+    console.log('copying')
+    fs.readFile(`./src/test/newPage/${copy}.html`, "utf8", function(err, data) {
 
 
     let myCallBack = function(data) {
@@ -11,7 +11,7 @@ const makeNewSite = (name) => {
         return data
 
      }
-        fs.writeFile(`./src/public/${name}`, myCallBack(data), (err) => {
+        fs.writeFile(`./src/public/${to}.html`, myCallBack(data), (err) => {
             if (err) throw err;
             });
 })

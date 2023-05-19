@@ -7,7 +7,7 @@ const path = require('path');
 const bodyParser = require("body-parser");
 
 const newSite = require('./test/newPage/newSite')
-const firstPage = './test/API/first-page.json'
+const firstPage = './src/test/API/first-page.json'
 
 const changePage = require('./test/change');
 const { response } = require('express');
@@ -16,7 +16,7 @@ let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
         return "https://eclipsebuilder.vercel.app"
     } else {
-        return "http://localhost:4000"
+        return "http://localhost:3000"
     }
 }
 
@@ -48,10 +48,10 @@ app.use('/',express.static(path.join(__dirname, './public')))
             res.send(changePage(firstPage, req.body))
     })
 
-    app.post("/api/page/newPage", function(req, res) {
+    app.post("/newPage/:page", function(req, res) {
         //req.params.page === 'newSite.js' ? newSite(req.body.name) :
 
-        res.send(newSite(req.body.name))
+        res.send(newSite(req.body.copy, req.body.to))
 })
 
 
