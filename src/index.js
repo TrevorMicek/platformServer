@@ -14,7 +14,7 @@ const { response } = require('express');
 
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "http://localhost:4000"
+        return "https://eclipsebuilder.vercel.app"
     } else {
         return "http://localhost:4000"
     }
