@@ -7,7 +7,7 @@ const path = require('path');
 const bodyParser = require("body-parser");
 
 const newSite = require('./test/newPage/newSite')
-const firstPage = './src/test/API/first-page.json'
+const firstPage = './test/API/first-page.json'
 
 const changePage = require('./test/change');
 const { response } = require('express');
