@@ -12,13 +12,13 @@ const writeCart = (filePath, jsonFile) => {
 }
 
 
-fs.readFile(`${filePath}`, "utf8", function(err, data) {
+fs.readFile("./src/test/API/first-page.json", "utf8", function(err, data) {
     if (err) throw err;
 console.log(filePath, 'here')
     let parseData = JSON.parse(data)
 
 
-    fs.readFile('./test/CompStore.json', "utf8", function(err, pageData) {
+    fs.readFile('./src/test/CompStore.json', "utf8", function(err, pageData) {
 
     if (err) throw err;
   let  comData = JSON.parse(pageData)
