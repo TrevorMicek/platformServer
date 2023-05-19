@@ -1,9 +1,30 @@
 [
   {
     "component": [
-      "Holder"
+      "Layout"
     ],
-    "text": [],
+    "text": [
+      [
+        "Home",
+        "Services",
+        "About",
+        "Store",
+        "Contact",
+        "Websites By Trevor"
+      ],
+      {
+        "headerTitle": "Small Business Web Design & Development",
+        "headerText": "Websites By Trevor"
+      },
+      {
+        "follow": "Follow Me!",
+        "navOne": "Home",
+        "navTwo": "Services",
+        "navThree": "About",
+        "navFour": "Store",
+        "navFive": "Contact"
+      }
+    ],
     "style": []
   },
   {
@@ -12,17 +33,18 @@
     ],
     "text": [
       {
-        "first": {
-          "title": "A New Way of Making Websites",
-          "para": "Websites By Trevor offers a quality of service that cannot be beat by WordPress nor other local developers. There are a few key differences you will find, the main differences being:"
-        }
+        "title": "A New Way of Making Websites",
+        "text": "Websites By Trevor is aiming to change how small business web design & development is being done. The main difference is we build single page applications and work to bring those high quality sites to small businesses like yours, or your clients'. There are a few other key differences you will find, the main differences being:",
+        "image": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
       }
     ],
     "style": [
       {
         "wrapper": {
+          "margin": "2vh auto",
           "color": "black",
-          "background": "white"
+          "background": "white",
+          "width": "75vw"
         }
       }
     ]
@@ -33,47 +55,46 @@
     ],
     "text": [
       {
-        "title": "Subscription Based",
-        "text": "NO SETUP FEE, $250 per month for a 5 page website + maintenance. Affordable packages with no hidden fees. Simple yearly contracts."
-      },
+        "data": [
+          {
+            "title": "Ø Monthly Cost"
+          },
+          {
+            "text": "Maintenance and edits are all built right into each website package so there's no annoying monthly subscription."
+          },
+          {
+            "title": "100% Custom Solution"
+          },
+          {
+            "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality, leading to more traffic and conversions."
+          },
+          {
+            "title": "Performance"
+          },
+          {
+            "text": "The #1 reason visitors will leave a website is if it's slow to load. Our sites are lightning fast, accessible and SEO friendly to rank higher on Google and provide a better user experience."
+          },
+          {
+            "title": "Affordable Pricing"
+          },
+          {
+            "text": "We use a unique pricing model, so you enjoy affordable packages, roughly half the price of others, no monthly maintenance fee & no hidden fees."
+          }
+
+        ]
+      }
+    ],
+    "elements": [
       {
-        "title": "Optimization",
-        "text": "Website speed is our driving force for a quality site. The number one reason visitors will leave your website is if it's too slow."
-      },
-      {
-        "title": "Mobile-First Design",
-        "text": "We build all our sites mobile-first because most online traffic is on mobile devices. We also ensure every site is fully responsive."
-      },
-      {
-        "title": "User-Friendly",
-        "text": "A simple and easy to use website is a priority, yet sometimes overlooked. All of our sites are easy to navigate and use."
+        "title": "h2",
+        "text": "p"
       }
     ],
     "style": [
       {
-        "wrapper": {
-          "margin": "0 auto 7.5vh auto",
-          "paddingTop": "2vh",
-          "textAlign": "center",
-          "width": "67vw",
-          "border": "1px solid lightgray",
-          "borderRadius": "5%",
-          "boxShadow": "2px 2px 4px 2px lightgray"
-        }
-      },
-      {
-        "data": {
-          "color": "blue",
-          "margin": "6vh 5vw 1vh 5vw",
-          "fontSize": "1.1rem",
-          "position": "relative",
-          "bottom": "3.5vh"
-        }
-      },
-      {
-        "img": {
-          "margin": "0 auto"
-        }
+        "title": "ml-16 text-lg leading-6 font-medium text-gray-900",
+        "text": "mt-2 ml-16 text-base text-gray-600"
+
       }
     ]
   }
