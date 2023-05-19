@@ -14,7 +14,7 @@ const { response } = require('express');
 
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "https://platform-server.onrender.com/"
+        return "https://eclipser.onrender.com/"
     } else {
         return "http://localhost:3000"
     }
