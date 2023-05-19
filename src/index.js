@@ -14,11 +14,12 @@ const { response } = require('express');
 
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "https://eclipsebuilder.vercel.app"
+        return "http://localhost:4000"
     } else {
-        return "http://localhost:3000"
+        return "http://localhost:4000"
     }
 }
+
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 let corsOptions = {
