@@ -66,6 +66,9 @@
     "component": [
       "FirstSection"
     ],
+    "image": [
+      "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg"
+    ],
     "text": [
       {
         "data": [
@@ -184,29 +187,7 @@
       }
     ]
   },
-  {
-    "component": [
-      "ThirdSection"
-    ],
-    "text": [
-      {
-        "data": [
-          {
-            "text": "Our Portfolio",
-            "element": "h2",
-            "styles": "mt-2 max-w-3xl mx-auto text-4xl leading-8 font-extrabold tracking-tight text-center lg:ml-16"
-          }
-        ]
-      }
-    ],
-    "style": [
-      {
-        "title": {
-          "color": "black"
-        }
-      }
-    ]
-  },
+
   {
     "component": [
       "FourthSection"
