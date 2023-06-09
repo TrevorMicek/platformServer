@@ -1,32 +1,5 @@
 [
-  {
-    "component": [
-      "Layout"
-    ],
-    "text": [
-      {
-        "title": ""
-      }
-    ],
-    "style": [
-      {
-        "wrapper": {
-          "backgroundColor": "white",
-          "fontColor": "",
-          "fontSize": ""
-        },
-        "primary": {
-          "backgroundColor": "white",
-          "color": "text-default"
-        },
-        "secondary": {
-          "backgroundColor": "bg-bg",
-          "color": "white"
-        }
-      }
-    ]
-  },
-  {
+    {
     "component": [
       "Header"
     ],
@@ -46,12 +19,12 @@
           {
             "text": "High quality websites for services and products. Attract more customers with a better website.",
             "element": "p",
-            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl "
+            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl min-w-full"
           },
           {
             "text": "Learn More",
             "element": "button",
-            "styles": " inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green  inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
+            "styles": "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green w-full inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
           }
         ]
       }
@@ -169,11 +142,6 @@
             "text": "We use a unique pricing model, so you enjoy affordable packages, roughly half the price of others, no monthly maintenance fee & no hidden fees.",
             "element": "p",
             "styles": "mt-2 ml-16 text-base text-gray-600"
-          },
-          {
-            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
-            "element": "img",
-            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
           }
         ]
       }
@@ -267,4 +235,4 @@
       }
     ]
   }
-]
+  ]

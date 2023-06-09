@@ -12,13 +12,13 @@ const writeCart = (filePath, jsonFile) => {
 }
 
 
-fs.readFile("src/test/API/first-page.json", "utf8", function(err, data) {
+fs.readFile("test/API/first-page.json", "utf8", function(err, data) {
     if (err) throw err;
 console.log(filePath, 'here')
     let parseData = JSON.parse(data)
 
 
-    fs.readFile('src/test/CompStore.json', "utf8", function(err, pageData) {
+    fs.readFile('test/CompStore.json', "utf8", function(err, pageData) {
 
     if (err) throw err;
   let  comData = JSON.parse(pageData)
@@ -77,7 +77,7 @@ console.log(jsonFile)
             let deleteComponent = jsonFile.delete && parseData[i].component[0] === jsonFile.delete
             let addComponent = jsonFile.add && getAdd() && getAdd().component[0] === jsonFile.add
             let switchComponent = jsonFile.switch && parseData[i].component[0] === jsonFile.switch[0]
-            let addElement = parseData[i].component[0] === jsonFile.from && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
+            let addElement = parseData[i].component[0] === jsonFile.from && !getAdd() && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
 
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
 
@@ -89,8 +89,8 @@ console.log(jsonFile)
                     return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
                 }
                 if (jsonFile.property === 'element') {
-                    let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].title, `${jsonFile.to}`)
-                    return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].title, null, 2), replace)
+                    let replace = JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].text, null, 2).replace(component[0].text[jsonFile.position][jsonFile.property][0].text, `${jsonFile.to}`)
+                    return JSON.stringify(parseData[parseData.indexOf(component[0])], null, 2).replace(JSON.stringify(component[0].text[jsonFile.position][jsonFile.property][0].text, null, 2), replace)
                 } else {
 
                 let replace = JSON.stringify(component[0].text[0].data[jsonFile.position].text, null, 2).replace(component[0].text[0].data[jsonFile.position].text, `${jsonFile.to}`)
@@ -144,13 +144,37 @@ console.log(jsonFile)
             switch (true) {
                 case addElement:
                     console.log('add El', jsonFile.to)
+                    let element = () => {
+                        switch(true) {
+                            case jsonFile.to === "text":
+                                return (
+                                    {
+                                        text: "Type text here...",
+                                        "element": "p",
+                            "styles": " mt-4 relative z-10 max-w-2xl text-xl text-gray-600 lg:mx-auto"
+                                      }
+                                )
+                                case jsonFile.to === "title":
+                                    return (
+                                        {
+                                            text: "Type title here...",
+                                            "element": "h2",
+                                "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
+                                          }
+                                    )
+                                    case jsonFile.to === "image":
+                                        return (
+                                            {
+                                                text: "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
+                                                "element": "img",
+                                    "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
+                                              }
+                                        )
+                        }
+                    }
                     let newEl = {}
                     let elementKeys = Object.keys(parseData[parseData.indexOf(component[0])].text[0])
-                    parseData[parseData.indexOf(component[0])].text[0].data.push({
-                        text: "Type here...",
-                        "element": "p",
-            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
-                      })
+                    parseData[parseData.indexOf(component[0])].text[0].data.push(element())
 
                     return JSON.stringify(parseData, null, 2)
                 case deleteElement:
