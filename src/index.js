@@ -17,7 +17,7 @@ const { response } = require('express');
 }) const cron = require('node-cron')*/
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "http://localhost:4000/"
+        return "https://eclipser.onrender.com"
     } else {
         return "http://localhost:3000"
     }
