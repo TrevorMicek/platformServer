@@ -19,7 +19,7 @@ let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
         return "https://eclipser.onrender.com"
     } else {
-        return "http://localhost:3000"
+        return "https://eclipser.onrender.com"
     }
 }
 
