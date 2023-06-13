@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 const cors = require('cors')
+const cron = require('node-cron')
 
 const path = require('path');
 const bodyParser = require("body-parser");
@@ -12,12 +13,12 @@ const firstPage = 'test/API/first-page.json'
 const changePage = require('./test/change');
 const { response } = require('express');
 
-/*cron.schedule('14, *****', () => {
+cron.schedule('14, *****', () => {
     console.log('wake up server!')
-}) const cron = require('node-cron')*/
+})
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "http:??localhost:4000/"
+        return "http://localhost:4000/"
     } else {
         return "http://localhost:3000"
     }
