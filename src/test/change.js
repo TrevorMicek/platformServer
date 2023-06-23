@@ -80,7 +80,7 @@ console.log(jsonFile)
             let addElement = parseData[i].component[0] === jsonFile.from && !getAdd() && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
 
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
-
+             console.log(changeText)
             let replaceText = (textOrStyle) => {
                 console.log('made it')
                let toReplace = () => {

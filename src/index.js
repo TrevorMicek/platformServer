@@ -17,9 +17,9 @@ const { response } = require('express');
 }) const cron = require('node-cron')*/
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "https://eclipser.onrender.com"
+        return "http://localhost:4000/"
     } else {
-        return "https://eclipser.onrender.com"
+        return "http://localhost:3000"
     }
 }
 
@@ -45,9 +45,10 @@ app.get('/', (req, res) => {
 
 app.use('/api/page/', express.static(path.join(__dirname, './test/API')));
 app.use('/',express.static(path.join(__dirname, './public')))
+
  app.post("/api/page/:page", function(req, res) {
             //req.params.page === 'newSite.js' ? newSite(req.body.name) :
-
+    console.log('change')
             res.send(changePage(firstPage, req.body))
     })
 

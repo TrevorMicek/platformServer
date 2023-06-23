@@ -1,5 +1,32 @@
 [
-    {
+  {
+    "component": [
+      "Layout"
+    ],
+    "text": [
+      {
+        "title": ""
+      }
+    ],
+    "style": [
+      {
+        "wrapper": {
+          "backgroundColor": "white",
+          "fontColor": "",
+          "fontSize": ""
+        },
+        "primary": {
+          "backgroundColor": "white",
+          "color": "text-default"
+        },
+        "secondary": {
+          "backgroundColor": "bg-bg",
+          "color": "white"
+        }
+      }
+    ]
+  },
+  {
     "component": [
       "Header"
     ],
@@ -7,24 +34,24 @@
       {
         "data": [
           {
-            "text": "Affordable, Custom",
+            "text": "Buibld You Own",
             "element": "h2",
-            "styles": "mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+            "styles": "mt-4 text-3xl font-extrabold text-white sm:mt-5 sm:text-5xl lg:mt-6 xl:text-6xl"
           },
           {
-            "text": "Ecommerce Websites",
+            "text": "High Quality Website",
             "element": "h2",
-            "styles": " mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+            "styles": " mt-4 text-3xl tracking-tight font-extrabold sm:mt-5 sm:text-5xl lg:mt-6 xl:text-6xl"
           },
           {
             "text": "High quality websites for services and products. Attract more customers with a better website.",
             "element": "p",
-            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl min-w-full"
+            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl "
           },
           {
             "text": "Learn More",
             "element": "button",
-            "styles": "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green w-full inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
+            "styles": " inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green  inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
           }
         ]
       }
@@ -96,7 +123,7 @@
           {
             "text": "Maintenance and edits are all built right into each website package so there's no annoying monthly subscription.",
             "element": "p",
-            "styles": "mt-2 ml-16 text-base text-gray-600"
+            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
@@ -111,7 +138,7 @@
           {
             "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality, leading to more traffic and conversions.",
             "element": "p",
-            "styles": "mt-2 ml-16 text-base text-gray-600"
+            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
@@ -124,9 +151,9 @@
             "styles": "ml-16 text-lg leading-6 font-medium text-gray-900"
           },
           {
-            "text": "The #1 reason visitors will leave a website is if it's slow to load. Our sites are lightning fast, accessible and SEO friendly to rank higher on Google and provide a better user experience.",
+            "text": "The #1 eason visitors will leave a website is if it's slow to load. Our sites are lightning fast, accessible and SEO friendly to rank higher on Google and provide a better user experience.",
             "element": "p",
-            "styles": "mt-2 ml-16 text-base text-gray-600"
+            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
@@ -141,7 +168,7 @@
           {
             "text": "We use a unique pricing model, so you enjoy affordable packages, roughly half the price of others, no monthly maintenance fee & no hidden fees.",
             "element": "p",
-            "styles": "mt-2 ml-16 text-base text-gray-600"
+            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
           }
         ]
       }
@@ -235,4 +262,4 @@
       }
     ]
   }
-  ]
+]
