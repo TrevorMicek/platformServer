@@ -83,12 +83,12 @@
           {
             "text": "Build Your Own",
             "element": "h1",
-            "styles": "text-white text-4xl font-bold"
+            "styles": "m-0 p-0  text-white text-4xl font-bold"
           },
           {
             "text": "High Quality Website",
-            "element": "h1",
-            "styles": "text-default text-4xl font-bold"
+            "element": "h2",
+            "styles": "m-0 p-0 text-default text-4xl font-bold"
           },
           {
             "text": "No coding, beautiful themes and faster websites.",
@@ -110,7 +110,7 @@
     ],
     "style": [
       {
-        "wrapper": "pt-10 bg-bg text-center sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden",
+        "wrapper": "relative border-2 border-white pt-10 bg-bg text-center sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden",
         "text": "text-center"
       }
     ]
@@ -248,24 +248,24 @@
           {
             "text": "Ready for something better?",
             "element": "h2",
-            "styles": "text-xl text-black sm:text-3xl md:text-4xl"
+            "styles": "p-0 m-0 text-2xl text-black font-extrabold sm:text-3xl md:text-4xl"
           },
           {
             "text": "Create a website today!",
             "element": "h2",
-            "styles": " text-default text-xl text-black sm:text-3xl md:text-4xl"
+            "styles": "p-0 m-0 my-2 text-default text-2xl font-extrabold text-black sm:text-3xl md:text-4xl"
           },
           {
             "text": "Free Trial",
             "element": "button",
-            "styles": "mt-2 sm:mt-6 inline-block rounded-md bg-default px-10 py-3 text-base font-medium text-white transition hover:bg-grn focus:outline-none focus:ring focus:ring-yellow-400"
+            "styles": "mt-5 sm:mt-6 inline-block rounded-md bg-default px-10 py-3 text-base font-medium text-white transition hover:bg-grn focus:outline-none focus:ring focus:ring-yellow-400"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "px-4 text-left flex flex-col pt-5 "
+        "wrapper": "px-4 text-left flex flex-col items-start  py-5 "
       }
     ]
   },
