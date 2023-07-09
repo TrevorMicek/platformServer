@@ -57,11 +57,6 @@
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1647045203/techBG_vuer11.webp",
             "element": "img",
             "styles": "flex justify-center w-full h-auto"
-          },
-          {
-            "text": "Type title here...",
-            "element": "h2",
-            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
           }
         ]
       }
@@ -83,22 +78,22 @@
           {
             "text": "Build Your Own",
             "element": "h1",
-            "styles": "m-0 p-0  text-white text-4xl font-bold"
+            "styles": "m-0 p-0 mx-5 px-2 mb-2 text-white text-4xl font-bold"
           },
           {
             "text": "High Quality Website",
             "element": "h2",
-            "styles": "m-0 p-0 text-default text-4xl font-bold"
+            "styles": "m-0 p-0 mx-5 px-2 text-default text-4xl font-bold"
           },
           {
-            "text": "No coding, beautiful themes and faster websites.",
+            "text": "No coding, beautiful themes and faster websites for services and products.",
             "element": "p",
-            "styles": "px-6 text-lg text-gray-300"
+            "styles": " mt-4 mx-5 px-2  text-lg text-gray-300"
           },
           {
             "text": "Learn More",
             "element": "button",
-            "styles": " text-white text-base font-light py-3 rounded-md px-6 bg-default border-0  hover:bg-grn"
+            "styles": "mx-5 px-2 max-w-24 text-white text-base font-light py-3 rounded-md px-6 bg-default border-0  hover:bg-grn"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1647045203/techBG_vuer11.webp",
@@ -110,8 +105,8 @@
     ],
     "style": [
       {
-        "wrapper": "relative border-2 border-white pt-10 bg-bg text-center sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden",
-        "text": "text-center"
+        "wrapper": "pt-5  flex flex-col  bg-bg text-left sm:pt-9 lg:pt-8 lg:pb-14 lg:overflow-hidden",
+        "text": ""
       }
     ]
   },
@@ -123,7 +118,7 @@
       {
         "data": [
           {
-            "text": "AFFORDABLE AND FULLY OPTIMIZED",
+            "text": "THE MODERN PLATFORM",
             "element": "h2",
             "styles": "text-base text-default"
           },
@@ -136,16 +131,6 @@
             "text": "Other platforms are a great starting point, but when you outgrow them, your options are limited. We are aiming to be the next step. With our cutting-edge page builder that offers an affordable, all-in-one website solution for businesses like yours. Using easy-to-use tools for creating and customizing websites.",
             "element": "p",
             "styles": "mt-4 text-gray-700"
-          },
-          {
-            "text": "Type title here...",
-            "element": "h2",
-            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
-          },
-          {
-            "text": "Type text here...ddd",
-            "element": "p",
-            "styles": " mt-4 relative z-10 max-w-2xl text-xl text-gray-600 lg:mx-auto"
           }
         ]
       }
@@ -166,7 +151,7 @@
           {
             "text": "benefits",
             "element": "h2",
-            "styles": "mt-5 mb-6 text-base  font-semibold tracking-wide uppercase"
+            "styles": "-mt-6 mb-6 text-base text-default font-semibold tracking-wide uppercase"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
@@ -234,7 +219,44 @@
     "style": [
       {
         "wrapper": "text-black",
-        "text": "text-white"
+        "text": ""
+      }
+    ]
+  },
+  {
+    "component": [
+      "ThirdSection"
+    ],
+    "text": [
+      {
+        "data": [
+          {
+            "text": "Popular Themes",
+            "element": "p",
+            "styles": " pt-4 text-3xl font-extrabold tracking-tight text-default text-center"
+          },
+          {
+            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1688790605/earth_ennmja.png",
+            "element": "img",
+            "styles": "p-0 m-0 h-64 w-full object-cover sm:h-80 lg:h-96"
+          },
+          {
+            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1688790605/spotter_dnzeel.png",
+            "element": "img",
+            "styles": "p-0 m-0 h-64 w-full object-cover sm:h-80 lg:h-96"
+          },
+          {
+            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1688790605/eagle_et3k0a.png",
+            "element": "img",
+            "styles": "p-0 m-0 h-64 w-full object-cover sm:h-80 lg:h-96"
+          }
+        ]
+      }
+    ],
+    "style": [
+      {
+        "wrapper": "flex flex-col bg-white lg:flex-row",
+        "text": "text-center"
       }
     ]
   },
@@ -317,6 +339,42 @@
     "style": [
       {
         "wrapper": "text-center text-white bg-bg w-full"
+      }
+    ]
+  },
+  {
+    "component": [
+      "Header"
+    ],
+    "text": [
+      {
+        "data": [
+          {
+            "text": "Affordable, Custom",
+            "element": "h2",
+            "styles": "mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+          },
+          {
+            "text": "Ecommerce Websites",
+            "element": "h2",
+            "styles": " mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+          },
+          {
+            "text": "High quality websites for services and products. Attract more customers with a better website.",
+            "element": "p",
+            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl min-w-full"
+          },
+          {
+            "text": "Learn More",
+            "element": "button",
+            "styles": "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green w-full inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
+          }
+        ]
+      }
+    ],
+    "style": [
+      {
+        "wrapper": "pt-10 bg-white sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
       }
     ]
   }
