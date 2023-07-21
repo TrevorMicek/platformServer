@@ -34,37 +34,22 @@
       {
         "data": [
           {
-            "text": "Build Your Own",
+            "text": "Eclipser",
             "element": "h1",
-            "styles": "text-white text-4xl font-bold"
+            "styles": "text-lg font-bold text-default flex-1 px-2 lg:flex-none"
           },
           {
-            "text": "High Quality Website",
+            "text": "menu",
             "element": "h1",
-            "styles": "text-default text-4xl font-bold"
-          },
-          {
-            "text": "Fast. Custom. Affordable.",
-            "element": "p",
-            "styles": "text-lg text-gray-300 py-6"
-          },
-          {
-            "text": "Learn More",
-            "element": "button",
-            "styles": " text-white text-base font-light py-3 rounded-md px-6 bg-default border-0  hover:bg-grn"
-          },
-          {
-            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1647045203/techBG_vuer11.webp",
-            "element": "img",
-            "styles": "flex justify-center w-full h-auto"
+            "styles": "text-base flex justify-end flex-1 px-2 flex items-stretch"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "pt-10 bg-bg  text-center sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden",
-        "text": "text-center"
+        "wrapper": "w-full navbar bg-base-300 text-white",
+        "text": ""
       }
     ]
   },
@@ -78,22 +63,22 @@
           {
             "text": "Build Your Own",
             "element": "h1",
-            "styles": "m-0 p-0 mx-5 px-2 mb-2 text-white text-4xl font-bold"
+            "styles": "m-0 p-0  w-full mt-2 mb-1 text-white text-4xl font-bold"
           },
           {
             "text": "High Quality Website",
             "element": "h2",
-            "styles": "m-0 p-0 mx-5 px-2 text-default text-4xl font-bold"
+            "styles": "m-0 p-0  w-full text-default text-4xl font-bold"
           },
           {
             "text": "No coding, beautiful themes and faster websites for services and products.",
             "element": "p",
-            "styles": " mt-4 mx-5 px-2  text-lg text-gray-300"
+            "styles": " mt-2  w-full text-lg text-white"
           },
           {
             "text": "Learn More",
             "element": "button",
-            "styles": "mx-5 px-2 max-w-24 text-white text-base font-light py-3 rounded-md px-6 bg-default border-0  hover:bg-grn"
+            "styles": " py-1  px-6 text-center text-white text-base font-light rounded-md bg-default border-0  hover:bg-grn"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1647045203/techBG_vuer11.webp",
@@ -105,7 +90,7 @@
     ],
     "style": [
       {
-        "wrapper": "pt-5  flex flex-col  bg-bg text-left sm:pt-9 lg:pt-8 lg:pb-14 lg:overflow-hidden",
+        "wrapper": " pt-6 px-6 flex flex-col justify-center items-start w-full bg-bg text-left ",
         "text": ""
       }
     ]
@@ -120,24 +105,24 @@
           {
             "text": "THE MODERN PLATFORM",
             "element": "h2",
-            "styles": "text-base text-default"
+            "styles": " text-base font-bold mb-5 text-default"
           },
           {
             "text": "A New Way of Making Websites",
             "element": "h2",
-            "styles": "text-3xl font-bold sm:text-4xl"
+            "styles": " text-3xl font-bold sm:text-4xl"
           },
           {
             "text": "Other platforms are a great starting point, but when you outgrow them, your options are limited. We are aiming to be the next step. With our cutting-edge page builder that offers an affordable, all-in-one website solution for businesses like yours. Using easy-to-use tools for creating and customizing websites.",
             "element": "p",
-            "styles": "mt-4 text-gray-700"
+            "styles": "mt-4 text-gray-600"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "px-6 mt-16"
+        "wrapper": "px-5 mt-7"
       }
     ]
   },
@@ -151,22 +136,37 @@
           {
             "text": "benefits",
             "element": "h2",
-            "styles": "-mt-6 mb-6 text-base text-default font-semibold tracking-wide uppercase"
+            "styles": " mb-2 text-base text-default font-semibold tracking-wide uppercase"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
             "element": "img",
-            "styles": "absolute mt-5 h-6 w-6"
+            "styles": "relative mt-5 h-8 w-8"
           },
           {
-            "text": "Ø Monthly Costss",
+            "text": "Ø Monthly Csssost",
             "element": "p",
-            "styles": "ml-16 text-lg leading-6 font-medium text-gray-900"
+            "styles": " text-lg leading-6 font-medium text-gray-900"
           },
           {
             "text": "Maintenance and edits are all built right into each website package so there's no annoying monthly subscription.",
             "element": "p",
-            "styles": "mt-2 ml-16  text-base text-gray-600"
+            "styles": "mt-2 text-base text-gray-600"
+          },
+          {
+            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
+            "element": "img",
+            "styles": " mt-5 h-6 w-6"
+          },
+          {
+            "text": "100% Custom Solution",
+            "element": "p",
+            "styles": " text-lg leading-6 font-medium text-gray-900"
+          },
+          {
+            "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality, leading to more traffic and conversions.",
+            "element": "p",
+            "styles": "mt-2  max-w-3xl text-base text-gray-600"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
@@ -174,55 +174,41 @@
             "styles": "relative mt-5 h-6 w-6"
           },
           {
-            "text": "100% Custom Solution",
-            "element": "p",
-            "styles": "ml-16 text-lg leading-6 font-medium text-gray-900"
-          },
-          {
-            "text": "All of our sites are made from scratch using our own code. This allows us full control over the design and functionality, leading to more traffic and conversions.",
-            "element": "p",
-            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
-          },
-          {
-            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
-            "element": "img",
-            "styles": "absolute mt-5 h-6 w-6"
-          },
-          {
             "text": "Performance",
             "element": "p",
-            "styles": "ml-16 text-lg leading-6 font-medium text-gray-900"
+            "styles": " text-lg leading-6 font-medium text-gray-900"
           },
           {
             "text": "The #1 eason visitors will leave a website is if it's slow to load. Our sites are lightning fast, accessible and SEO friendly to rank higher on Google and provide a better user experience.",
             "element": "p",
-            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
+            "styles": "mt-2  max-w-3xl text-base text-gray-600"
           },
           {
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
             "element": "img",
-            "styles": "absolute mt-5 h-6 w-6"
+            "styles": "relative mt-5 h-6 w-6"
           },
           {
             "text": "Affordable Pricing",
             "element": "p",
-            "styles": "ml-16 text-lg leading-6 font-medium text-gray-900"
+            "styles": " text-lg leading-6 font-medium text-gray-900"
           },
           {
             "text": "We use a unique pricing model, so you enjoy affordable packages, roughly half the price of others, no monthly maintenance fee & no hidden fees.",
             "element": "p",
-            "styles": "mt-2 ml-16 max-w-3xl text-base text-gray-600"
+            "styles": "mt-2  max-w-3xl text-base text-gray-600"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "text-black",
+        "wrapper": "text-black px-5 px-5 flex flex-col border-2 border-black",
         "text": ""
       }
     ]
   },
+
   {
     "component": [
       "ThirdSection"
@@ -280,7 +266,7 @@
           {
             "text": "Free Trial",
             "element": "button",
-            "styles": "mt-5 sm:mt-6 inline-block rounded-md bg-default px-10 py-3 text-base font-medium text-white transition hover:bg-grn focus:outline-none focus:ring focus:ring-yellow-400"
+            "styles": "py-1  px-6 text-center text-white text-base font-light rounded-md bg-default border-0  hover:bg-grn"
           }
         ]
       }
@@ -301,80 +287,44 @@
           {
             "text": "Home",
             "element": "Link",
-            "styles": " px-6 py-2",
+            "styles": " px-6 py-1",
             "link": "home"
           },
           {
             "text": "Product",
             "element": "Link",
-            "styles": "  px-6 py-2",
+            "styles": "  px-6 py-1",
             "link": "product"
           },
           {
             "text": "Pricing",
             "element": "Link",
-            "styles": "  px-6 py-2",
+            "styles": "  px-6 py-1",
             "link": "product"
           },
           {
             "text": "Blog",
             "element": "Link",
-            "styles": " px-6 py-2",
+            "styles": " px-6 py-1",
             "link": "blog"
           },
           {
             "text": "Contact",
             "element": "Link",
-            "styles": " px-6 py-2",
+            "styles": " px-6 py-1",
             "link": "contact"
           },
           {
-            "text": "© 2021 Websites By Trevor LLC. All rights reserved.",
+            "text": "© 2021 Eclipser LLC. All rights reserved.",
             "element": "p",
-            "styles": " mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-300"
+            "styles": "mt-6 max-w-md text-center leading-relaxed text-gray-300"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "text-center text-white bg-bg w-full"
-      }
-    ]
-  },
-  {
-    "component": [
-      "Header"
-    ],
-    "text": [
-      {
-        "data": [
-          {
-            "text": "Affordable, Custom",
-            "element": "h2",
-            "styles": "mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
-          },
-          {
-            "text": "Ecommerce Websites",
-            "element": "h2",
-            "styles": " mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
-          },
-          {
-            "text": "High quality websites for services and products. Attract more customers with a better website.",
-            "element": "p",
-            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl min-w-full"
-          },
-          {
-            "text": "Learn More",
-            "element": "button",
-            "styles": "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green w-full inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
-          }
-        ]
-      }
-    ],
-    "style": [
-      {
-        "wrapper": "pt-10 bg-white sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
+        "wrapper": "pt-10 flex flex-col text-center text-white bg-bg w-full"
       }
     ]
   }

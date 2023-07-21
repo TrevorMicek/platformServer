@@ -19,15 +19,21 @@ let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
         return "http://localhost:4000/"
     } else {
-        return "https://eclipser.onrender.com"
+        return "http://localhost:3000"
     }
 }
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-let corsOptions = {
-    origin: findOrigin(),
-    credentials: true
+var whitelist = ['http://localhost:3000', 'https://eclipser.onrender.com']
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
 }
 app.use(cors(corsOptions))
 
@@ -39,20 +45,20 @@ if (process.env.NODE_ENV === 'production') {
 } else {
     app.use(express.static(path.join(__dirname, './public')))
 }
-app.get('/', (req, res) => {
+app.get('/', cors(corsOptions),(req, res) => {
     res.sendFile(path.join(__dirname))
 })
+app.use('/api/page/',cors(corsOptions), express.static(path.join(__dirname, './test/API/Pages')));
 
-app.use('/api/page/', express.static(path.join(__dirname, './test/API')));
-app.use('/',express.static(path.join(__dirname, './public')))
+app.use('/',cors(corsOptions), express.static(path.join(__dirname, './public')))
 
- app.post("/api/page/:page", function(req, res) {
+ app.post("/api/page/:page", cors(corsOptions), function(req, res) {
             //req.params.page === 'newSite.js' ? newSite(req.body.name) :
-    console.log('change')
-            res.send(changePage(firstPage, req.body))
+
+            res.send(changePage(`test/API/Pages/${req.body.page}.json`, req.body))
     })
 
-    app.post("/newPage/:page", function(req, res) {
+    app.post("/newPage/:page", cors(corsOptions), function(req, res) {
         //req.params.page === 'newSite.js' ? newSite(req.body.name) :
 
         res.send(newSite(req.body.copy, req.body.to))
