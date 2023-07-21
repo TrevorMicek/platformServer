@@ -15,13 +15,6 @@ const { response } = require('express');
 /*cron.schedule('14, *****', () => {
     console.log('wake up server!')
 }) const cron = require('node-cron')*/
-let findOrigin = () => {
-    if (process.env.NODE_ENV === 'production') {
-        return "https://eclipser.onrender.com/"
-    } else {
-        return "http://localhost:3000"
-    }
-}
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
