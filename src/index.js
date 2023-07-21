@@ -15,21 +15,20 @@ const { response } = require('express');
 /*cron.schedule('14, *****', () => {
     console.log('wake up server!')
 }) const cron = require('node-cron')*/
+let findOrigin = () => {
+    if (process.env.NODE_ENV === 'production') {
+        return "https://eclipser.onrender.com/"
+    } else {
+        return "https://eclipser.onrender.com/"
+    }
+}
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-var whitelist = ['http://localhost:3000', 'https://eclipser.onrender.com/']
-var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  },
-  credentials: true
+let corsOptions = {
+    origin: findOrigin(),
+    credentials: true
 }
-
 app.use(cors(corsOptions))
 
 
@@ -40,20 +39,20 @@ if (process.env.NODE_ENV === 'production') {
 } else {
     app.use(express.static(path.join(__dirname, './public')))
 }
-app.get('/', cors(corsOptions),(req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname))
 })
-app.use('/api/page/',cors(corsOptions), express.static(path.join(__dirname, './test/API/Pages')));
+app.use('/api/page/', express.static(path.join(__dirname, './test/API/Pages')));
 
-app.use('/',cors(corsOptions), express.static(path.join(__dirname, './public')))
+app.use('/',express.static(path.join(__dirname, './public')))
 
- app.post("/api/page/:page", cors(corsOptions), function(req, res) {
+ app.post("/api/page/:page", function(req, res) {
             //req.params.page === 'newSite.js' ? newSite(req.body.name) :
 
             res.send(changePage(`test/API/Pages/${req.body.page}.json`, req.body))
     })
 
-    app.post("/newPage/:page", cors(corsOptions), function(req, res) {
+    app.post("/newPage/:page", function(req, res) {
         //req.params.page === 'newSite.js' ? newSite(req.body.name) :
 
         res.send(newSite(req.body.copy, req.body.to))
