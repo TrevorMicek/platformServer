@@ -17,7 +17,7 @@ const { response } = require('express');
 }) const cron = require('node-cron')*/
 let findOrigin = () => {
     if (process.env.NODE_ENV === 'production') {
-        return "http://localhost:4000/"
+        return "https://eclipser.onrender.com/"
     } else {
         return "http://localhost:3000"
     }
@@ -25,7 +25,7 @@ let findOrigin = () => {
 
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
-var whitelist = ['http://localhost:3000', 'https://eclipser.onrender.com']
+var whitelist = ['http://localhost:3000', 'https://eclipser.onrender.com/']
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
@@ -33,8 +33,10 @@ var corsOptions = {
     } else {
       callback(new Error('Not allowed by CORS'))
     }
-  }
+  },
+  credentials: true
 }
+
 app.use(cors(corsOptions))
 
 
