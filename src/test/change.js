@@ -80,7 +80,7 @@ console.log(jsonFile)
             let addElement = parseData[i].component[0] === jsonFile.from && !getAdd() && component[0].text && !jsonFile.position && !jsonFile.property && jsonFile.add && !jsonFile.delete
 
             let deleteElement = parseData[i].component[0] === jsonFile.from && component[0].text && jsonFile.position && !jsonFile.property && !jsonFile.add
-             console.log(changeText)
+
             let replaceText = (textOrStyle) => {
                 console.log('made it')
                let toReplace = () => {
@@ -143,7 +143,7 @@ console.log(jsonFile)
              //.style[0][jsonFile.position][jsonFile.property]
             switch (true) {
                 case addElement:
-                    console.log('add El', jsonFile.to)
+                    console.log('add El', jsonFile.to, jsonFile.add)
                     let element = () => {
                         switch(true) {
                             case jsonFile.to === "text":
@@ -163,9 +163,10 @@ console.log(jsonFile)
                                           }
                                     )
                                     case jsonFile.to === "image":
+                                        console.log('here')
                                         return (
                                             {
-                                                text: "https://res.cloudinary.com/websites-by-trevor/image/upload/v1629507631/images/quality_tewdbb.svg",
+                                                text: jsonFile.add,
                                                 "element": "img",
                                     "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
                                               }

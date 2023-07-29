@@ -73,7 +73,7 @@
       {
         "data": [
           {
-            "text": "Build Your Own",
+            "text": "Building Your Own",
             "element": "h1",
             "styles": "m-0 p-0  w-full mt-2 mb-1 text-white text-4xl font-bold"
           },
@@ -97,6 +97,11 @@
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1647045203/techBG_vuer11.webp",
             "element": "img",
             "styles": "flex justify-center w-full h-auto"
+          },
+          {
+            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1688790605/earth_ennmja.png",
+            "element": "img",
+            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
           }
         ]
       }
@@ -118,24 +123,24 @@
           {
             "text": "THE MODERN PLATFORM",
             "element": "h2",
-            "styles": " text-base font-bold mb-5 text-default"
+            "styles": "w-full text-base font-bold mb-5 text-default"
           },
           {
             "text": "A New Way of Making Websites",
             "element": "h2",
-            "styles": " text-3xl font-bold sm:text-4xl"
+            "styles": "w-full text-3xl font-bold sm:text-4xl"
           },
           {
             "text": "We are the first platform to offer a website that anyone can build, that runs like a developer made website. Other platforms lack in their customer service and their performance. We fix these major issues and more, with Eclipser.",
             "element": "p",
-            "styles": "mt-4 text-gray-600"
+            "styles": "mt-4 w-full text-gray-600"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "px-5 mt-7"
+        "wrapper": "px-5 mt-7 w-full"
       }
     ]
   },
@@ -342,12 +347,12 @@
           {
             "text": "Ready for something better?",
             "element": "h2",
-            "styles": "p-0 m-0 text-2xl text-black font-extrabold sm:text-3xl md:text-4xl"
+            "styles": "p-0 m-0  text-2xl text-black font-extrabold sm:text-3xl md:text-4xl"
           },
           {
             "text": "Create a website today!",
             "element": "h2",
-            "styles": "p-0 m-0 my-2 text-default text-2xl font-extrabold text-black sm:text-3xl md:text-4xl"
+            "styles": "p-0 m-0 -mb-1 text-default text-2xl font-extrabold text-black sm:text-3xl md:text-4xl"
           },
           {
             "text": "Free Trial",
@@ -412,6 +417,42 @@
     "style": [
       {
         "wrapper": "pt-10 flex flex-col text-center text-white bg-bg w-full"
+      }
+    ]
+  },
+  {
+    "component": [
+      "Header"
+    ],
+    "text": [
+      {
+        "data": [
+          {
+            "text": "Affordable, Custom",
+            "element": "h2",
+            "styles": "mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+          },
+          {
+            "text": "Ecommerce Websites",
+            "element": "h2",
+            "styles": " mt-4 text-4xl tracking-tight font-extrabold sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"
+          },
+          {
+            "text": "High quality websites for services and products. Attract more customers with a better website.",
+            "element": "p",
+            "styles": "mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl min-w-full"
+          },
+          {
+            "text": "Learn More",
+            "element": "button",
+            "styles": "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white  hover:text-wh hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green w-full inline-flex items-center justify-center  border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-default hover:bg-grn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green"
+          }
+        ]
+      }
+    ],
+    "style": [
+      {
+        "wrapper": "pt-10 bg-white sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden"
       }
     ]
   }
