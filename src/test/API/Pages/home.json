@@ -8,19 +8,23 @@
         "title": ""
       }
     ],
+      "theme": [
+        "rgb(12, 116, 137)",
+        "rgb(10 20 30)"
+      ],
     "style": [
       {
         "wrapper": {
           "backgroundColor": "white",
-          "fontColor": "",
+          "color": "rgb(107 114 128)",
           "fontSize": ""
         },
         "primary": {
-          "backgroundColor": "white",
-          "color": "text-default"
+          "backgroundColor": "black",
+          "color": "black"
         },
         "secondary": {
-          "backgroundColor": "bg-bg",
+          "backgroundColor": "bg-white",
           "color": "white"
         }
       }
@@ -75,17 +79,24 @@
           {
             "text": "Building Your Own",
             "element": "h1",
-            "styles": "m-0 p-0  w-full mt-2 mb-1 text-white text-4xl font-bold"
+            "styles": "m-0 p-0  w-full mt-2 mb-1  text-4xl font-bold"
           },
           {
             "text": "High Quality Website",
             "element": "h2",
-            "styles": "m-0 p-0  w-full text-default text-4xl font-bold"
+            "styles": [
+              " m-0 p-0  w-full  text-4xl font-bold",
+              {
+                "text": {
+                  "color": "rgb(12, 116, 137)"
+                }
+              }
+            ]
           },
           {
             "text": "No coding, beautiful themes and faster websites for services and products.",
             "element": "p",
-            "styles": " mt-2  w-full text-lg text-white"
+            "styles": " mt-2  w-full text-lg"
           },
           {
             "text": "Learn More",
@@ -97,19 +108,17 @@
             "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1647045203/techBG_vuer11.webp",
             "element": "img",
             "styles": "flex justify-center w-full h-auto"
-          },
-          {
-            "text": "https://res.cloudinary.com/websites-by-trevor/image/upload/v1688790605/earth_ennmja.png",
-            "element": "img",
-            "styles": "mt-2 relative z-10 max-w-3xl text-3xl leading-8 font-extrabold tracking-tight text-gray-900 lg:mx-auto"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": " pt-6 px-6 flex flex-col justify-center items-start w-full bg-bg text-left ",
-        "text": ""
+        "wrapper": " pt-6 px-6 flex flex-col justify-center items-start w-full text-left ",
+        "text": {
+          "color": "white",
+          "backgroundColor": "rgb(10 20 30)"
+        }
       }
     ]
   },
@@ -123,24 +132,41 @@
           {
             "text": "THE MODERN PLATFORM",
             "element": "h2",
-            "styles": "w-full text-base font-bold mb-5 text-default"
+            "styles": [
+              "w-full text-base font-bold mb-5",
+            {
+              "text": {
+                "color": "rgb(12, 116, 137)"
+              }
+            }
+          ]
           },
           {
             "text": "A New Way of Making Websites",
             "element": "h2",
-            "styles": "w-full text-3xl font-bold sm:text-4xl"
+            "styles": [
+              "w-full text-3xl font-bold sm:text-4xl",
+            {
+              "text": {
+                "color": "black"
+              }
+            }
+          ]
           },
           {
             "text": "We are the first platform to offer a website that anyone can build, that runs like a developer made website. Other platforms lack in their customer service and their performance. We fix these major issues and more, with Eclipser.",
             "element": "p",
-            "styles": "mt-4 w-full text-gray-600"
+            "styles": "mt-4 w-full p-0 m-0"
           }
         ]
       }
     ],
     "style": [
       {
-        "wrapper": "px-5 mt-7 w-full"
+        "wrapper": "px-5 pt-7 w-full",
+        "text": {
+          "backgroundColor": "white"
+        }
       }
     ]
   },
@@ -179,7 +205,9 @@
     "style": [
       {
         "wrapper": "flex flex-row space-x-6 text-black px-5 px-5",
-        "text": ""
+        "text": {
+          "backgroundColor": "white"
+        }
       }
     ]
   },
@@ -332,8 +360,7 @@
     ],
     "style": [
       {
-        "wrapper": "flex flex-col bg-white lg:flex-row",
-        "text": "text-center"
+        "wrapper": "flex flex-col bg-white lg:flex-row"
       }
     ]
   },
